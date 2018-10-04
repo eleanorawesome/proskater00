@@ -5,10 +5,30 @@
 	"runtime": "c2",
 	"useWorker": false,
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r119",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r119",
+			"bundled": false
+		}
+	],
 	"uniqueId": "rbe48k5st2f",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"box",
+			"Keyboard"
+		],
 		"subfolders": []
 	},
 	"autosaveData": null,
