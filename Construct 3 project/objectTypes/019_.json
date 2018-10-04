@@ -1,7 +1,7 @@
 {
-	"name": "Sprite16",
+	"name": "019_",
 	"plugin-id": "Sprite",
-	"sid": 212120836349128,
+	"sid": 507695046157276,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,11 +18,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 20,
+						"imageSpriteId": 21,
 						"duration": 1
 					}
 				],
-				"sid": 773772368258670,
+				"sid": 652802867281819,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

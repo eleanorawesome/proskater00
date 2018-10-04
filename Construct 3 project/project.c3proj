@@ -58,23 +58,22 @@
 		"subfolders": [
 			{
 				"items": [
-					"Eleanor_Skateboard",
-					"Sprite",
-					"Sprite2",
-					"Sprite3",
-					"Sprite4",
-					"Sprite5",
-					"Sprite6",
-					"Sprite7",
-					"Sprite8",
-					"Sprite9"
+					"001_Eleanor_Skateboard",
+					"002_Sprite",
+					"003_",
+					"004_",
+					"005_",
+					"006_",
+					"007_",
+					"008_",
+					"009_",
+					"010_"
 				],
 				"subfolders": [],
 				"name": "Eleanor"
 			},
 			{
 				"items": [
-<<<<<<< HEAD
 					"011_GreenBUs",
 					"012_BUS",
 					"013_",
@@ -86,26 +85,12 @@
 					"019_",
 					"020_",
 					"021_"
-=======
-					"GreenBUs",
-					"Sprite10",
-					"Sprite11",
-					"Sprite12",
-					"Sprite13",
-					"Sprite14",
-					"Sprite15",
-					"Sprite16",
-					"Sprite17",
-					"Sprite18",
-					"Sprite19"
->>>>>>> parent of 15927b5... RenamingSprites
 				],
 				"subfolders": [],
 				"name": "Jennifer"
 			},
 			{
 				"items": [
-<<<<<<< HEAD
 					"022_purplesquare",
 					"023_redcircle",
 					"024_",
@@ -116,18 +101,6 @@
 					"029_",
 					"030_",
 					"031_"
-=======
-					"Sprite20",
-					"Sprite21",
-					"Sprite22",
-					"Sprite23",
-					"Sprite24",
-					"Sprite25",
-					"Sprite26",
-					"Sprite27",
-					"Sprite28",
-					"Sprite29"
->>>>>>> parent of 15927b5... RenamingSprites
 				],
 				"subfolders": [],
 				"name": "Jhayzle"
