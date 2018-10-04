@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 11900,
+	"savedWithRelease": 12000,
 	"name": "Proskater00",
 	"runtime": "c2",
 	"useWorker": false,
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r119",
+			"version": "r120",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r119",
+			"version": "r120",
 			"bundled": false
 		}
 	],
@@ -31,7 +31,9 @@
 		],
 		"subfolders": [
 			{
-				"items": [],
+				"items": [
+					"cookie"
+				],
 				"subfolders": [],
 				"name": "Jhayzle"
 			},
