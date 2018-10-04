@@ -8,6 +8,14 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Spritefont2",
 			"name": "Sprite font",
 			"author": "Scirra",
@@ -49,7 +57,9 @@
 		],
 		"subfolders": [
 			{
-				"items": [],
+				"items": [
+					"Eleanor_Skateboard"
+				],
 				"subfolders": [],
 				"name": "Eleanor"
 			},
