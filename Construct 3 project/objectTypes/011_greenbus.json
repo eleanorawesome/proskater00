@@ -1,7 +1,7 @@
 {
-	"name": "Sprite13",
+	"name": "011_GreenBUs",
 	"plugin-id": "Sprite",
-	"sid": 114521367826123,
+	"sid": 197856115076660,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,18 +11,18 @@
 			{
 				"frames": [
 					{
-						"width": 16,
-						"height": 16,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 17,
+						"imageSpriteId": 4,
 						"duration": 1
 					}
 				],
-				"sid": 652441242939432,
+				"sid": 124146318761885,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
