@@ -1,15 +1,15 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 12000,
-	"name": "Proskater00",
+	"name": "Test02",
 	"runtime": "c2",
 	"useWorker": false,
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Spritefont2",
+			"name": "Sprite font",
 			"author": "Scirra",
 			"version": "r120",
 			"bundled": false
@@ -21,36 +21,47 @@
 			"author": "Scirra",
 			"version": "r120",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
 		}
 	],
-	"uniqueId": "rbe48k5st2f",
+	"uniqueId": "jopsqrdn16a",
 	"objectTypes": {
 		"items": [
-			"box",
-			"Keyboard"
+			"SpriteFont",
+			"Keyboard",
+			"Touch",
+			"Mouse"
 		],
 		"subfolders": [
 			{
-				"items": [
-					"cookie"
-				],
+				"items": [],
 				"subfolders": [],
-				"name": "Jhayzle"
+				"name": "Eleanor"
 			},
 			{
-				"items": [
-					"Jennifer_Bus"
-				],
+				"items": [],
 				"subfolders": [],
 				"name": "Jennifer"
 			},
 			{
-				"items": [
-					"Eleanor",
-					"Eleanor_Skateboard"
-				],
+				"items": [],
 				"subfolders": [],
-				"name": "Eleanor"
+				"name": "Jhayzle"
 			}
 		]
 	},
@@ -62,20 +73,26 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
-			"Layout 2",
-			"Eleanor",
-			"Jennifer",
-			"Jhayzle Layout"
+			"Layout 1"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Jennifer",
+					"Eleanor",
+					"Jhayzle"
+				],
+				"subfolders": [],
+				"name": "Dumps"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
 			"Main",
 			"Eleanor",
-			"Jennifer",
-			"Jhayzle"
+			"Jhayzle",
+			"Jennifer"
 		],
 		"subfolders": []
 	},
@@ -99,19 +116,11 @@
 		"icon": {
 			"items": [
 				{
-					"name": "loading-logo.png",
-					"type": "image/png"
-				},
-				{
-					"name": "icon-16.png",
-					"type": "image/png"
-				},
-				{
 					"name": "icon-32.png",
 					"type": "image/png"
 				},
 				{
-					"name": "icon-64.png",
+					"name": "icon-512.png",
 					"type": "image/png"
 				},
 				{
@@ -119,11 +128,19 @@
 					"type": "image/png"
 				},
 				{
+					"name": "loading-logo.png",
+					"type": "image/png"
+				},
+				{
 					"name": "icon-256.png",
 					"type": "image/png"
 				},
 				{
-					"name": "icon-512.png",
+					"name": "icon-16.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-64.png",
 					"type": "image/png"
 				}
 			],
@@ -170,7 +187,7 @@
 			0
 		],
 		"useHighDpi": true,
-		"orientations": "landscape",
+		"orientations": "any",
 		"enableWebGL": true,
 		"sampling": "point",
 		"downscaling": "medium",

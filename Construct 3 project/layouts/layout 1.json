@@ -1,11 +1,11 @@
 {
-	"name": "Jhayzle Layout",
+	"name": "Layout 1",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [],
-			"sid": 281486997401325,
+			"sid": 545348206068558,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -30,7 +30,7 @@
 			"global": false
 		}
 	],
-	"sid": 738016938055341,
+	"sid": 711762270558100,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 640,
