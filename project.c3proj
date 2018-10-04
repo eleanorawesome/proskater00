@@ -69,8 +69,10 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Event sheet 2"
+			"Main",
+			"Eleanor",
+			"Jennifer",
+			"Jhayzle"
 		],
 		"subfolders": []
 	},

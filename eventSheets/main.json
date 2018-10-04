@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "Main",
 	"events": [
 		{
 			"eventType": "block",
@@ -48,6 +48,18 @@
 				}
 			],
 			"sid": 950129334256877
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Eleanor"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Jennifer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Jhayzle"
 		}
 	],
 	"sid": 171495447141175

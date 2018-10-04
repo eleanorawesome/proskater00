@@ -36,5 +36,5 @@
 	"width": 640,
 	"height": 360,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Main"
 }
