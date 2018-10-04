@@ -1,7 +1,7 @@
 {
-	"name": "Sprite20",
+	"name": "jhayzle_candy",
 	"plugin-id": "Sprite",
-	"sid": 993171882045281,
+	"sid": 724108582934514,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,11 +18,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 24,
+						"imageSpriteId": 5,
 						"duration": 1
 					}
 				],
-				"sid": 216008582969515,
+				"sid": 965183846361148,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
