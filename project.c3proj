@@ -27,7 +27,8 @@
 	"objectTypes": {
 		"items": [
 			"box",
-			"Keyboard"
+			"Keyboard",
+			"Eleanor"
 		],
 		"subfolders": []
 	},
