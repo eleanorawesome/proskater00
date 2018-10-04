@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "001_Eleanor_Skateboard",
+					"type": "Eleanor_Skateboard",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -34,7 +34,7 @@
 					}
 				},
 				{
-					"type": "002_Sprite",
+					"type": "Sprite",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -62,7 +62,7 @@
 					}
 				},
 				{
-					"type": "003_",
+					"type": "Sprite2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

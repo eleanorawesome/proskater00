@@ -1,7 +1,7 @@
 {
-	"name": "003_",
+	"name": "Eleanor_Skateboard",
 	"plugin-id": "Sprite",
-	"sid": 841353478661973,
+	"sid": 625776196315896,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,18 +11,18 @@
 			{
 				"frames": [
 					{
-						"width": 16,
-						"height": 16,
+						"width": 24,
+						"height": 24,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6,
+						"imageSpriteId": 2,
 						"duration": 1
 					}
 				],
-				"sid": 863516263179266,
+				"sid": 641812993018252,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
