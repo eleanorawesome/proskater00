@@ -1,7 +1,7 @@
 {
-	"name": "012_BUS",
+	"name": "018_",
 	"plugin-id": "Sprite",
-	"sid": 478243131532043,
+	"sid": 212120836349128,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,11 +18,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1,
+						"imageSpriteId": 20,
 						"duration": 1
 					}
 				],
-				"sid": 454534195203299,
+				"sid": 773772368258670,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

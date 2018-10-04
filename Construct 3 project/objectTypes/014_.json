@@ -1,7 +1,7 @@
 {
-	"name": "018_MAP",
+	"name": "014_",
 	"plugin-id": "Sprite",
-	"sid": 212120836349128,
+	"sid": 954269106704041,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,11 +18,11 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 14,
+						"imageSpriteId": 16,
 						"duration": 1
 					}
 				],
-				"sid": 773772368258670,
+				"sid": 692311246362442,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
