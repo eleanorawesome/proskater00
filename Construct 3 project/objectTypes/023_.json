@@ -1,5 +1,5 @@
 {
-	"name": "023_redcircle",
+	"name": "023_",
 	"plugin-id": "Sprite",
 	"sid": 724108582934514,
 	"isGlobal": false,
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5,
+						"imageSpriteId": 25,
 						"duration": 1
 					}
 				],
