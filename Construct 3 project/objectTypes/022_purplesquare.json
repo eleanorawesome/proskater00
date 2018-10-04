@@ -1,5 +1,5 @@
 {
-	"name": "022_",
+	"name": "022_purplesquare",
 	"plugin-id": "Sprite",
 	"sid": 993171882045281,
 	"isGlobal": false,
@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 24,
+						"imageSpriteId": 1,
 						"duration": 1
 					}
 				],
