@@ -4,7 +4,36 @@
 		{
 			"name": "Layer 0",
 			"overriden": 0,
-			"instances": [],
+			"instances": [
+				{
+					"type": "Jennifer_Bus",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 319,
+						"y": 83,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0
+					}
+				}
+			],
 			"sid": 564793265585119,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
