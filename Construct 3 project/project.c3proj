@@ -64,7 +64,9 @@
 				"name": "Eleanor"
 			},
 			{
-				"items": [],
+				"items": [
+					"YellowBus"
+				],
 				"subfolders": [],
 				"name": "Jennifer"
 			},
