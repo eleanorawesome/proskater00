@@ -27,10 +27,27 @@
 	"objectTypes": {
 		"items": [
 			"box",
-			"Keyboard",
-			"Eleanor"
+			"Keyboard"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Jhayzle"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Jennifer"
+			},
+			{
+				"items": [
+					"Eleanor"
+				],
+				"subfolders": [],
+				"name": "Eleanor"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
