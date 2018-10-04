@@ -4,37 +4,8 @@
 		{
 			"name": "Layer 0",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "YellowBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 175,
-						"y": 111,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0
-					}
-				}
-			],
-			"sid": 599152683267549,
+			"instances": [],
+			"sid": 239847700671951,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -59,11 +30,11 @@
 			"global": false
 		}
 	],
-	"sid": 210181571742790,
+	"sid": 387332063243160,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 640,
 	"height": 360,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Event sheet 2"
 }
