@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "YellowBox",
+					"type": "YellowBus",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -14,12 +14,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3,
+					"uid": 4,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 175,
-						"y": 111,
+						"x": 171,
+						"y": 118,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
@@ -34,7 +34,7 @@
 					}
 				}
 			],
-			"sid": 599152683267549,
+			"sid": 186734677109681,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -59,11 +59,11 @@
 			"global": false
 		}
 	],
-	"sid": 210181571742790,
+	"sid": 694506477225813,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 640,
 	"height": 360,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "Event sheet 2"
 }

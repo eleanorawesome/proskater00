@@ -7,23 +7,24 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 401555278969339,
+					"sid": 637361298244754,
 					"parameters": {
-						"key": 87
+						"key": 65
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "rotate-clockwise",
-					"objectClass": "YellowBox",
-					"sid": 775234252133150,
+					"id": "set-position",
+					"objectClass": "YellowBus",
+					"sid": 785977054019218,
 					"parameters": {
-						"degrees": "5"
+						"x": "Self.X-120*dt",
+						"y": "Self.Y"
 					}
 				}
 			],
-			"sid": 732132602425203
+			"sid": 279220205643213
 		},
 		{
 			"eventType": "block",
@@ -31,24 +32,25 @@
 				{
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
-					"sid": 408384154245598,
+					"sid": 111988276704796,
 					"parameters": {
-						"key": 83
+						"key": 68
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "rotate-counter-clockwise",
-					"objectClass": "YellowBox",
-					"sid": 342430605053993,
+					"id": "set-position",
+					"objectClass": "YellowBus",
+					"sid": 626811100878342,
 					"parameters": {
-						"degrees": "5"
+						"x": "Self.X+120*dt",
+						"y": "Self.Y"
 					}
 				}
 			],
-			"sid": 309797888241347
+			"sid": 941390303832025
 		}
 	],
-	"sid": 554946007231654
+	"sid": 490168282167037
 }
