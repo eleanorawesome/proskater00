@@ -18,8 +18,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 438,
-						"y": 171,
+						"x": 153,
+						"y": 123,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
@@ -42,12 +42,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 8,
+					"uid": 11,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 455,
-						"y": 89,
+						"x": 169,
+						"y": 70,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -70,7 +70,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 9,
+					"uid": 12,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
