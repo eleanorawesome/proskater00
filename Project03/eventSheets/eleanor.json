@@ -1,5 +1,53 @@
 {
 	"name": "eleanor",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 200556394388951,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "Sprite",
+					"sid": 716930977678356,
+					"behaviorType": "Pathfinding",
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 968729524042350
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-path-found",
+					"objectClass": "Sprite",
+					"sid": 936747827577273,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-along-path",
+					"objectClass": "Sprite",
+					"sid": 269978765723356,
+					"behaviorType": "Pathfinding"
+				}
+			],
+			"sid": 277559482168541
+		}
+	],
 	"sid": 624664427606290
 }
