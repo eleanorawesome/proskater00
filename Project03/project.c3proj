@@ -45,6 +45,14 @@
 			"author": "Scirra",
 			"version": "r120",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
 		}
 	],
 	"uniqueId": "mls35a4u49o",
@@ -55,7 +63,8 @@
 			"Set",
 			"Reset",
 			"StatusText",
-			"Keyboard"
+			"Keyboard",
+			"Sprite"
 		],
 		"subfolders": []
 	},
