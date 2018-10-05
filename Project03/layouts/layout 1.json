@@ -149,7 +149,8 @@
 					},
 					"uid": 7,
 					"instanceVariables": {
-						"hi": false
+						"hi": false,
+						"ergrtjhtjtdyrxsrhtkjtgjkshes": 0
 					},
 					"behaviors": {
 						"Pathfinding": {
