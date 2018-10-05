@@ -53,6 +53,22 @@
 			"author": "Scirra",
 			"version": "r120",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
 		}
 	],
 	"uniqueId": "mls35a4u49o",
@@ -64,7 +80,8 @@
 			"Reset",
 			"StatusText",
 			"Keyboard",
-			"Sprite"
+			"Sprite",
+			"Mouse"
 		],
 		"subfolders": []
 	},
@@ -82,7 +99,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"eleanor"
 		],
 		"subfolders": []
 	},
