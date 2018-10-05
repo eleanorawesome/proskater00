@@ -148,7 +148,9 @@
 						"live-preview": false
 					},
 					"uid": 7,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"hi": false
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
