@@ -148,7 +148,9 @@
 						"live-preview": false
 					},
 					"uid": 7,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"ergrtjhtjtdyrxsrhtkjtgjkshes": 0
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {

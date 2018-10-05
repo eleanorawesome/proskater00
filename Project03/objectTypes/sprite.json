@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 573795259418170,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "ergrtjhtjtdyrxsrhtkjtgjkshes",
+			"type": "number",
+			"desc": "",
+			"sid": 268170373416952
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pathfinding",
