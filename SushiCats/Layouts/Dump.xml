@@ -349,7 +349,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jhayzle08" uid="21">
+                <instance type="Ingredient" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -362,11 +362,11 @@
                         <x>122</x>
                         <y>176</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>25</width>
+                        <height>25</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
