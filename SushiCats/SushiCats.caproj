@@ -263,6 +263,9 @@
         <layout>Main.xml</layout>
         <layout>UI.xml</layout>
         <layout>Dump.xml</layout>
+        <layout>TestRamy.xml</layout>
+        <layout>TestEleanor.xml</layout>
+        <layout>TestJhayzle.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>MAIN.xml</event-sheet>
