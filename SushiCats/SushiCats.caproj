@@ -65,7 +65,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Eleanor">
-            <object-type name="Eleanor01" sid="321384601275481">
+            <object-type name="Cucumber" sid="321384601275481">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="862999971021369" speed="5">
@@ -260,12 +260,15 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Main.xml</layout>
+        <layout>Prep.xml</layout>
         <layout>UI.xml</layout>
         <layout>Dump.xml</layout>
         <layout>TestRamy.xml</layout>
         <layout>TestEleanor.xml</layout>
         <layout>TestJhayzle.xml</layout>
+        <layout>Assemble.xml</layout>
+        <layout>Plating.xml</layout>
+        <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>MAIN.xml</event-sheet>

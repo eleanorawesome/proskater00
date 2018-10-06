@@ -2,7 +2,7 @@
 <c2layout>
     <name>TestRamy</name>
     <sid>863423825696207</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>MAIN</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>

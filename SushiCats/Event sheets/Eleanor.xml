@@ -2,5 +2,18 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eleanor</name>
-    <events />
+    <events>
+        <event-block sid="888362989026792">
+            <conditions>
+                <condition id="3" name="On touched object" sid="389554421546512" type="Touch">
+                    <param id="0" name="Object">Cucumber</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="485216095843485" type="Cucumber">
+                    <param id="0" name="X">clamp(self.X-10,10,300)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
