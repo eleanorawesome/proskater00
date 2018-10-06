@@ -21,6 +21,18 @@
             </conditions>
             <actions />
         </event-block>
-        <event-group description="" sid="294174936929192" title="Cucumber" />
+        <event-group description="" sid="294174936929192" title="Cucumber">
+            <sub-events>
+                <variable constant="1" name="TouchID" sid="709015063088847" static="0" type="number">-1</variable>
+                <event-block sid="778873235217925">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="507935111022760" type="Touch">
+                            <param id="0" name="Object">zone01</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
