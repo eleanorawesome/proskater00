@@ -214,22 +214,22 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566417125647638" speed="5">
-                        <frame duration="1" hotspotX="0.52" hotspotY="0.38">
+                        <frame duration="1" hotspotX="0.38" hotspotY="0.48">
                             <collision-poly>
-                                <point x="0.00790501" y="0.004" />
-                                <point x="0.992095" y="0.004" />
-                                <point x="0.992095" y="1" />
-                                <point x="0.00790501" y="1" />
+                                <point x="0.00400001" y="0.992095" />
+                                <point x="0.00400001" y="0.00790501" />
+                                <point x="1" y="0.00790501" />
+                                <point x="1" y="0.992095" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Cuts" sid="195266942916278">
+            <object-type name="Ginger" sid="195266942916278">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304301084154622" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -249,7 +249,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Jhayzle05" sid="687290339929442">
+            <object-type name="Wasabi" sid="687290339929442">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937594195888281" speed="5">

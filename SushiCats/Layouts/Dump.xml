@@ -42,11 +42,11 @@
                         <x>171</x>
                         <y>88</y>
                         <z>0</z>
-                        <width>25</width>
+                        <width>50</width>
                         <height>50</height>
                         <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.379999995</hotspotY>
+                        <hotspotX>0.379999995</hotspotX>
+                        <hotspotY>0.479999989</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -208,7 +208,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Cuts" uid="15">
+                <instance type="Ginger" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -221,11 +221,11 @@
                         <x>206</x>
                         <y>249</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>125</width>
+                        <height>125</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.504000008</hotspotX>
+                        <hotspotY>0.504000008</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -274,7 +274,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jhayzle05" uid="18">
+                <instance type="Wasabi" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
