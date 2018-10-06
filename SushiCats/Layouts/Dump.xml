@@ -171,17 +171,21 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <active>false</active>
+                        <id>0</id>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>831</x>
                         <y>136</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>152</width>
+                        <height>147</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.618421078</hotspotX>
+                        <hotspotY>0.537414968</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
