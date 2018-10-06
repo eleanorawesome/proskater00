@@ -78,8 +78,11 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Eleanor02" sid="290693143572107">
+            <object-type name="TouchNO" sid="290693143572107">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="447239443608098" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169989813690945" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -118,16 +121,22 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Eleanor07" sid="441421655650044">
+            <object-type name="TouchCollision" sid="441421655650044">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="470006390911583" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995371463475545" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Eleanor08" sid="756276036213150">
+            <object-type name="TouchYES" sid="756276036213150">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="726401490293966" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612608211313140" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -201,15 +210,22 @@
             </object-type>
         </object-folder>
         <object-folder name="Jhayzle">
-            <object-type name="Jhayzle01" sid="188702369110080">
+            <object-type name="CutRoll" sid="188702369110080">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566417125647638" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.38">
+                            <collision-poly>
+                                <point x="0.00790501" y="0.004" />
+                                <point x="0.992095" y="0.004" />
+                                <point x="0.992095" y="1" />
+                                <point x="0.00790501" y="1" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Jhayzle02" sid="195266942916278">
+            <object-type name="Cuts" sid="195266942916278">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304301084154622" speed="5">
@@ -217,7 +233,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Jhayzle03" sid="903644129076447">
+            <object-type name="Table" sid="903644129076447">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334069745816864" speed="5">
@@ -225,7 +241,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Jhayzle04" sid="993309607809763">
+            <object-type name="Plate" sid="993309607809763">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357053088567861" speed="5">
@@ -287,13 +303,13 @@
         <event-sheet>Ramy.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Function" uid="1" />
-        <global-instance type="Touch" uid="2">
+        <global-instance type="Function" uid="2" />
+        <global-instance type="Touch" uid="3">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="3">
+        <global-instance type="Audio" uid="4">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -307,7 +323,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="4" />
+        <global-instance type="Browser" uid="41" />
     </global-instances>
     <sounds-folder />
     <music-folder />
