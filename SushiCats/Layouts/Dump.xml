@@ -208,7 +208,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Ginger" uid="15">
+                <instance type="GingerBowl" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -274,7 +274,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Wasabi" uid="18">
+                <instance type="WasabiBowl" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -287,30 +287,33 @@
                         <x>116</x>
                         <y>150</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>125</width>
+                        <height>125</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.504000008</hotspotX>
+                        <hotspotY>0.504000008</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jhayzle06" uid="19">
+                <instance type="GingerPiece" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Active>false</Active>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>142</x>
                         <y>159</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>50</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -318,21 +321,24 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jhayzle07" uid="20">
+                <instance type="WasabiPiece" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Active>false</Active>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>98</x>
                         <y>141</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>50</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

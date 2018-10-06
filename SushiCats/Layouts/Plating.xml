@@ -51,6 +51,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Plate" uid="35">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>625</x>
+                        <y>240</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -88,28 +110,6 @@
                         <depth>0</depth>
                         <hotspotX>0.379999995</hotspotX>
                         <hotspotY>0.479999989</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Plate" uid="35">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>625</x>
-                        <y>240</y>
-                        <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -224,7 +224,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Ginger" uid="42">
+                <instance type="GingerBowl" uid="42">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -236,6 +236,28 @@
                     <world>
                         <x>133</x>
                         <y>108</y>
+                        <z>0</z>
+                        <width>125</width>
+                        <height>125</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504000008</hotspotX>
+                        <hotspotY>0.504000008</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="WasabiBowl" uid="46">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>289</x>
+                        <y>110</y>
                         <z>0</z>
                         <width>125</width>
                         <height>125</height>
