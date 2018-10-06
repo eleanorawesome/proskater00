@@ -304,12 +304,12 @@
     </event-folder>
     <global-instances>
         <global-instance type="Function" uid="41" />
-        <global-instance type="Touch" uid="42">
+        <global-instance type="Touch" uid="43">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="43">
+        <global-instance type="Audio" uid="44">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -323,7 +323,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="44" />
+        <global-instance type="Browser" uid="45" />
     </global-instances>
     <sounds-folder />
     <music-folder />

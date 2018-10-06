@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Table" uid="1">
+                <instance type="Table" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="CutRoll" uid="34">
+                <instance type="CutRoll" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -80,8 +80,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>133</x>
-                        <y>254</y>
+                        <x>215</x>
+                        <y>272</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -124,8 +124,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>175</x>
-                        <y>253</y>
+                        <x>197</x>
+                        <y>286</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -146,8 +146,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>251</x>
-                        <y>282</y>
+                        <x>183</x>
+                        <y>301</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -168,8 +168,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>324</x>
-                        <y>285</y>
+                        <x>167</x>
+                        <y>323</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -190,8 +190,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>96</x>
-                        <y>253</y>
+                        <x>160</x>
+                        <y>341</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -212,8 +212,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>59</x>
-                        <y>296</y>
+                        <x>143</x>
+                        <y>366</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
