@@ -51,13 +51,16 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Eleanor02" uid="31">
+                <instance type="TouchNO" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <TouchID>-1</TouchID>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

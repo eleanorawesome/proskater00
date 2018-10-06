@@ -78,8 +78,11 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Eleanor02" sid="290693143572107">
+            <object-type name="TouchNO" sid="290693143572107">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="447239443608098" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169989813690945" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -118,16 +121,22 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Eleanor07" sid="441421655650044">
+            <object-type name="TouchCollision" sid="441421655650044">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="470006390911583" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995371463475545" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Eleanor08" sid="756276036213150">
+            <object-type name="TouchYES" sid="756276036213150">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="726401490293966" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612608211313140" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />

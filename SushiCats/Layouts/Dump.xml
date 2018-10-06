@@ -384,13 +384,16 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Eleanor02" uid="23">
+                <instance type="TouchNO" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <TouchID>-1</TouchID>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -494,13 +497,16 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Eleanor07" uid="28">
+                <instance type="TouchCollision" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <TouchID>-1</TouchID>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -516,13 +522,16 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Eleanor08" uid="29">
+                <instance type="TouchYES" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <TouchID>-1</TouchID>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
