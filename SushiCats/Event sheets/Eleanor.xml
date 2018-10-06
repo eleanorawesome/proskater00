@@ -85,6 +85,10 @@
                         <action id="-9" name="Destroy" sid="181670633348531" type="TouchCollision" />
                     </actions>
                 </event-block>
+                <event-block sid="656051340132398">
+                    <conditions />
+                    <actions />
+                </event-block>
             </sub-events>
         </event-group>
     </events>
