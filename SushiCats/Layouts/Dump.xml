@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Jhayzle01" uid="7">
+                <instance type="CutRoll" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -42,11 +42,11 @@
                         <x>171</x>
                         <y>88</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>25</width>
+                        <height>50</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.379999995</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -208,7 +208,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jhayzle02" uid="15">
+                <instance type="Cuts" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -230,7 +230,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jhayzle03" uid="16">
+                <instance type="Table" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -252,7 +252,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Jhayzle04" uid="17">
+                <instance type="Plate" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
