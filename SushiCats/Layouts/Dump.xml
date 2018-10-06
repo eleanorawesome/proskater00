@@ -375,11 +375,11 @@
                         <x>365</x>
                         <y>319</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>232</width>
+                        <height>43</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.511627913</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

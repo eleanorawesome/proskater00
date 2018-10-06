@@ -15,5 +15,12 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="563491774401001">
+            <conditions>
+                <condition id="5" name="On any finished" sid="555714552068700" type="Cucumber" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-group description="" sid="294174936929192" title="Cucumber" />
     </events>
 </c2eventsheet>
