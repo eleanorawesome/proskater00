@@ -90,6 +90,9 @@
         </object-type>
         <object-type name="04Sprite" sid="190531322475751">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="da whoop" name="shoop" sid="418094011383537" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804964645065668" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
