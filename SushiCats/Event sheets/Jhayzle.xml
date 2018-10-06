@@ -101,5 +101,34 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="946730867464006">
+            <conditions>
+                <condition id="3" name="On touched object" sid="118289788406263" type="Touch">
+                    <param id="0" name="Object">CutRoll</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="768376753094965">
+            <conditions />
+            <actions>
+                <action id="-3" name="Set position" sid="853878227996662" type="CutRoll">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="-24" name="Move to top" sid="307444011725709" type="CutRoll" />
+            </actions>
+        </event-block>
+        <event-block sid="939332707309558">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="132854616702561" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="900878129821030" type="CutRoll">
+                    <param id="0" name="X">Touch.X </param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
