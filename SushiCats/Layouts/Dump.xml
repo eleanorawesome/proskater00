@@ -125,7 +125,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <active>0</active>
+                        <active>false</active>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Ramy</name>
     <events>
-        <variable comment="During the assembly: Is the user grabbing an ingredient?" constant="0" name="Assemble_hasIngredient" sid="712638036590777" static="0" type="number">0</variable>
         <event-block sid="816958799419037">
             <conditions>
                 <condition id="3" name="On touched object" sid="823722953986970" type="Touch">
@@ -17,22 +16,36 @@
                     <param id="2" name="X">Touch.X</param>
                     <param id="3" name="Y">Touch.Y</param>
                 </action>
-                <action id="-10" name="Set value" sid="553958096954878" type="04Sprite">
+                <action id="-14" name="Toggle boolean" sid="181562755909507" type="04Sprite">
                     <param id="0" name="Instance variable">active</param>
-                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="203996458434804">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="370157669965421" type="04Sprite">
+                <condition id="-8" name="Is boolean instance variable set" sid="370157669965421" type="04Sprite">
                     <param id="0" name="Instance variable">active</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="988311224217647" type="04Sprite">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="333747723037411">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="881206260003376" type="Touch" />
+                <condition id="-8" name="Is boolean instance variable set" sid="969361749428883" type="04Sprite">
+                    <param id="0" name="Instance variable">active</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-14" name="Toggle boolean" sid="679156437680639" type="04Sprite">
+                    <param id="0" name="Instance variable">active</param>
+                </action>
+                <action id="-3" name="Set position" sid="825845828540220" type="04Sprite">
                     <param id="0" name="X">Touch.X</param>
                     <param id="1" name="Y">Touch.Y</param>
                 </action>
