@@ -125,7 +125,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <shoop>0</shoop>
+                        <active>0</active>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -133,11 +133,11 @@
                         <x>682</x>
                         <y>136</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>96</width>
+                        <height>96</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.520833313</hotspotX>
+                        <hotspotY>0.583333313</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
