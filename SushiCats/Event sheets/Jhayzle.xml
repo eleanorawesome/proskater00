@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jhayzle</name>
     <events>
+        <variable constant="0" name="SelectedRoll" sid="502564142874221" static="0" type="number">0</variable>
         <event-block sid="213702834807026">
             <conditions>
                 <condition id="3" name="On touched object" sid="639662004815970" type="Touch">
@@ -107,10 +108,26 @@
                     <param id="0" name="Object">CutRoll</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-9" name="Set value" sid="841411467300202" type="System">
+                    <param id="0" name="Variable">SelectedRoll</param>
+                    <param id="1" name="Value">CutRoll.ID</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="768376753094965">
-            <conditions />
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="439153637186432" type="CutRoll">
+                    <param id="0" name="Instance variable">ID</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">SelectedRoll</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="199531498846411" type="System">
+                    <param id="0" name="Variable">SelectedRoll</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="853878227996662" type="CutRoll">
                     <param id="0" name="X">Touch.X</param>
@@ -127,6 +144,10 @@
                 <action id="-3" name="Set position" sid="900878129821030" type="CutRoll">
                     <param id="0" name="X">Touch.X </param>
                     <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="-9" name="Set value" sid="240126668018631" type="System">
+                    <param id="0" name="Variable">SelectedRoll</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
