@@ -282,11 +282,11 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Jhayzle08" sid="929346756992921">
+            <object-type name="Ingredient" sid="929346756992921">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457455369377926" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
                     </animation>
                 </animation-folder>
             </object-type>
