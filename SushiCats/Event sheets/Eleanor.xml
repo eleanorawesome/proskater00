@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eleanor</name>
     <events>
+        <variable constant="0" name="Preparation_Stage" sid="567117766998198" static="0" type="number">0</variable>
         <event-block sid="888362989026792">
             <conditions>
                 <condition id="3" name="On touched object" sid="389554421546512" type="Touch">
