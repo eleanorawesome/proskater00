@@ -478,40 +478,172 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669574087138062" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.521008" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="602985526687472" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.521008" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\avocado_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="746407087835308" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.516667" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\carrots_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.1375" y="0.146119" />
+                                <point x="0.5125" y="0.00456621" />
+                                <point x="0.854167" y="0.187215" />
+                                <point x="0.966667" y="0.502283" />
+                                <point x="0.854167" y="0.817352" />
+                                <point x="0.5125" y="0.977169" />
+                                <point x="0.1625" y="0.83105" />
+                                <point x="0.00416667" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="262721190321183" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.514523" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\cucumber_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.136929" y="0.146119" />
+                                <point x="0.510373" y="0.00456621" />
+                                <point x="0.850622" y="0.187215" />
+                                <point x="0.962656" y="0.502283" />
+                                <point x="0.850622" y="0.817352" />
+                                <point x="0.510373" y="0.977169" />
+                                <point x="0.161826" y="0.83105" />
+                                <point x="0.00414938" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="768870427591955" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.516667" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\daikon_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.1375" y="0.146119" />
+                                <point x="0.5125" y="0.00456621" />
+                                <point x="0.854167" y="0.187215" />
+                                <point x="0.966667" y="0.502283" />
+                                <point x="0.854167" y="0.817352" />
+                                <point x="0.5125" y="0.977169" />
+                                <point x="0.1625" y="0.83105" />
+                                <point x="0.00416667" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="718372052446218" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.521008" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\eel_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="239747518022029" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.521008" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\egg_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="561902197318709" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.521008" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\salmon_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="766565508432039" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.546219" hotspotY="0.506849" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\shrimp_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.0710225" y="0.0659911" />
+                                <point x="0.539739" y="0" />
+                                <point x="0.966793" y="0.116657" />
+                                <point x="1" y="0.505098" />
+                                <point x="0.966793" y="0.893538" />
+                                <point x="0.539739" y="1" />
+                                <point x="0.10227" y="0.910427" />
+                                <point x="0" y="0.505098" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="411011299867258" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.521008" hotspotY="0.502283" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\tuna_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Ginger" pingpong="0" repeatcount="1" repeatto="0" sid="959588041936331" speed="5">
-                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="C:\Users\ramy\Desktop\gingerbowl.png" />
+                        <frame duration="1" hotspotX="0.52521" hotspotY="0.506849" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Bowled Ingredients\ginger_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Wasabi" pingpong="0" repeatcount="1" repeatto="0" sid="372444694774716" speed="5">
-                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="C:\Users\ramy\Desktop\wasabibowl.png" />
+                        <frame duration="1" hotspotX="0.52521" hotspotY="0.506849" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\wasabi_on_bowl.png">
+                            <collision-poly>
+                                <point x="0.138655" y="0.146119" />
+                                <point x="0.516807" y="0.00456621" />
+                                <point x="0.861345" y="0.187215" />
+                                <point x="0.97479" y="0.502283" />
+                                <point x="0.861345" y="0.817352" />
+                                <point x="0.516807" y="0.977169" />
+                                <point x="0.163866" y="0.83105" />
+                                <point x="0.00420168" y="0.502283" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Nori" pingpong="0" repeatcount="1" repeatto="0" sid="208457607692578" speed="5">
                         <frame duration="1" hotspotX="0.490909" hotspotY="0.481818" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\nori.png">
@@ -697,57 +829,154 @@
                         <frame duration="1" hotspotX="0.520833" hotspotY="0.583333" />
                     </animation>
                     <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="498472371153867" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.395833" hotspotY="3.18254" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_avacado.png">
+                            <collision-poly>
+                                <point x="0.384079" y="0" />
+                                <point x="0.0998549" y="1" />
+                                <point x="0.87501" y="1" />
+                                <point x="0.96401" y="1" />
+                                <point x="0.384079" y="1" />
+                                <point x="0.11421" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="748192072550324" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.505263" hotspotY="0.479167" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_carrots.png">
+                            <collision-poly>
+                                <point x="0.102426" y="0.088" />
+                                <point x="0.504043" y="0.024" />
+                                <point x="0.886792" y="0.144" />
+                                <point x="0.889488" y="0.472" />
+                                <point x="0.800539" y="0.552" />
+                                <point x="0.504043" y="0.984" />
+                                <point x="0.15903" y="0.696" />
+                                <point x="0.06469" y="0.472" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="629311058998827" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.501754" hotspotY="0.447917" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_cucumber.png">
+                            <collision-poly>
+                                <point x="0.102426" y="0.096" />
+                                <point x="0.501348" y="0.024" />
+                                <point x="0.884097" y="0.144" />
+                                <point x="0.894879" y="0.448" />
+                                <point x="0.501348" y="0.984" />
+                                <point x="0.140162" y="0.696" />
+                                <point x="0.0619946" y="0.448" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="273190647905505" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.505263" hotspotY="0.53125" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_daikon.png">
+                            <collision-poly>
+                                <point x="0.115903" y="0.224" />
+                                <point x="0.504043" y="0.024" />
+                                <point x="0.919137" y="0.144" />
+                                <point x="0.87062" y="0.536" />
+                                <point x="0.792453" y="0.552" />
+                                <point x="0.504043" y="0.984" />
+                                <point x="0.167116" y="0.696" />
+                                <point x="0.0107817" y="0.536" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="607211857719342" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.518325" hotspotY="0.510417" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_eel.png">
+                            <collision-poly>
+                                <point x="0.15015" y="0.224551" />
+                                <point x="0.516517" y="0.5" />
+                                <point x="0.945946" y="0.0988024" />
+                                <point x="0.569069" y="0.508982" />
+                                <point x="0.722222" y="0.476048" />
+                                <point x="0.516517" y="0.811377" />
+                                <point x="0.138138" y="0.820359" />
+                                <point x="0.0840841" y="0.508982" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="692089926549964" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.502994" hotspotY="0.5" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_egg.png">
+                            <collision-poly>
+                                <point x="0.100478" y="0.174274" />
+                                <point x="0.5" y="0.0622407" />
+                                <point x="0.954545" y="0.0788382" />
+                                <point x="0.923445" y="0.497925" />
+                                <point x="0.84689" y="0.73444" />
+                                <point x="0.5" y="0.854772" />
+                                <point x="0.0813397" y="0.858921" />
+                                <point x="0.0454545" y="0.497925" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="400099049757956" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.466102" hotspotY="0.458333" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_salmon.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.458612" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.450085" />
+                                <point x="0.821475" y="0.910092" />
+                                <point x="0.458612" y="1" />
+                                <point x="0.162946" y="0.863782" />
+                                <point x="0" y="0.450085" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="370871978206202" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.447917" hotspotY="0.503226" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_shrimp.png">
+                            <collision-poly>
+                                <point x="0.031746" y="0.0808824" />
+                                <point x="0.452381" y="0.0147059" />
+                                <point x="0.93254" y="0.0441176" />
+                                <point x="0.980159" y="0.504902" />
+                                <point x="0.77381" y="0.870098" />
+                                <point x="0.452381" y="0.987745" />
+                                <point x="0.190476" y="0.833333" />
+                                <point x="0.0198413" y="0.504902" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="835436844048956" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.532895" hotspotY="0.572917" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\sliced_tuna.png">
+                            <collision-poly>
+                                <point x="0.228715" y="0.198413" />
+                                <point x="0.534224" y="0.391534" />
+                                <point x="0.69783" y="0.425926" />
+                                <point x="0.961603" y="0.568783" />
+                                <point x="0.843072" y="0.941799" />
+                                <point x="0.534224" y="0.978836" />
+                                <point x="0.343907" y="0.756614" />
+                                <point x="0.0601002" y="0.568783" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Ginger" pingpong="0" repeatcount="1" repeatto="0" sid="504586101926994" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ramy\Desktop\gingerpeice.png">
+                        <frame duration="1" hotspotX="0.488189" hotspotY="0.59375" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\ginger_piece.png">
                             <collision-poly>
-                                <point x="0.38" y="0.38" />
-                                <point x="0.5" y="0.2" />
-                                <point x="0.9" y="0.1" />
-                                <point x="0.68" y="0.5" />
-                                <point x="0.66" y="0.66" />
-                                <point x="0.5" y="0.84" />
-                                <point x="0.1" y="0.9" />
-                                <point x="0.38" y="0.5" />
+                                <point x="0.343106" y="0.453607" />
+                                <point x="0.490683" y="0.242623" />
+                                <point x="0.982609" y="0.12541" />
+                                <point x="0.71205" y="0.594262" />
+                                <point x="0.687453" y="0.781803" />
+                                <point x="0.490683" y="0.992787" />
+                                <point x="0" y="1" />
+                                <point x="0.343106" y="0.594262" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Wasabi" pingpong="0" repeatcount="1" repeatto="0" sid="835976661517594" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ramy\Desktop\wasabipiece.png">
+                        <frame duration="1" hotspotX="0.492754" hotspotY="0.427083" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\Piece Ingredients\wasabi_piece.png">
                             <collision-poly>
-                                <point x="0.32" y="0.32" />
-                                <point x="0.5" y="0.2" />
-                                <point x="0.68" y="0.32" />
-                                <point x="0.76" y="0.5" />
-                                <point x="0.7" y="0.7" />
-                                <point x="0.5" y="0.74" />
-                                <point x="0.32" y="0.68" />
-                                <point x="0.24" y="0.5" />
+                                <point x="0.187945" y="0.215049" />
+                                <point x="0.486301" y="0.0712871" />
+                                <point x="0.784658" y="0.215049" />
+                                <point x="0.91726" y="0.430693" />
+                                <point x="0.817808" y="0.670297" />
+                                <point x="0.486301" y="0.718218" />
+                                <point x="0.187945" y="0.646337" />
+                                <point x="0.0553425" y="0.430693" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -765,15 +994,37 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Rice" pingpong="0" repeatcount="1" repeatto="0" sid="683446603116805" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.676136" hotspotY="0.387978" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\rice_piece.png">
+                            <collision-poly>
+                                <point x="0.380682" y="0.142077" />
+                                <point x="0.676136" y="0.0382514" />
+                                <point x="0.875" y="0.234973" />
+                                <point x="0.835227" y="0.387978" />
+                                <point x="0.982955" y="0.644809" />
+                                <point x="0.676136" y="0.765027" />
+                                <point x="0.289773" y="0.721311" />
+                                <point x="0.164773" y="0.387978" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="05Sprite" sid="622040047860612">
+            <object-type name="Rice" sid="622040047860612">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751913406310834" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.501222" hotspotY="0.5" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\rice_big.png">
+                            <collision-poly>
+                                <point x="0.154034" y="0.160714" />
+                                <point x="0.498778" y="0.0408163" />
+                                <point x="0.819071" y="0.188776" />
+                                <point x="0.943765" y="0.5" />
+                                <point x="0.863081" y="0.857143" />
+                                <point x="0.498778" y="0.954082" />
+                                <point x="0.124694" y="0.869898" />
+                                <point x="0.0146699" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -799,11 +1050,11 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="RamySprite00" sid="715376906064809">
+            <object-type name="SushiMat" sid="715376906064809">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504043280500844" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\bamboomat.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -919,7 +1170,14 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334069745816864" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.432" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\deskbetweencatsandBG.png">
+                            <collision-poly>
+                                <point x="0.0225501" y="0" />
+                                <point x="0.97745" y="0" />
+                                <point x="0.995516" y="0.992323" />
+                                <point x="0.00448442" y="0.992323" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
