@@ -280,61 +280,53 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="zone01" uid="53">
+                <instance type="CuttingBoardMArker" uid="40">
                     <properties>
-                        <left-margin>4</left-margin>
-                        <right-margin>4</right-margin>
-                        <top-margin>4</top-margin>
-                        <bottom-margin>4</bottom-margin>
-                        <edges>Tile</edges>
-                        <fill>Stretch</fill>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Center</hotspot>
-                        <seams>Overlap</seams>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <ZoneName>&quot;CuttingBoard&quot;</ZoneName>
+                        <ZoneName>CuttingBoard</ZoneName>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>300</x>
-                        <y>325</y>
+                        <x>338</x>
+                        <y>316</y>
                         <z>0</z>
-                        <width>572</width>
-                        <height>258</height>
+                        <width>662</width>
+                        <height>219</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.505102038</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="zone01" uid="54">
+                <instance type="CuttingBoardMArker" uid="53">
                     <properties>
-                        <left-margin>4</left-margin>
-                        <right-margin>4</right-margin>
-                        <top-margin>4</top-margin>
-                        <bottom-margin>4</bottom-margin>
-                        <edges>Tile</edges>
-                        <fill>Stretch</fill>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                        <seams>Overlap</seams>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <ZoneName>&quot;NomNom&quot;</ZoneName>
+                        <ZoneName>NomNom</ZoneName>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>279</x>
-                        <y>439</y>
+                        <x>435.020385742</x>
+                        <y>455</y>
                         <z>0</z>
-                        <width>313</width>
-                        <height>38</height>
+                        <width>862</width>
+                        <height>61</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.505102038</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
