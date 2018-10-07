@@ -313,7 +313,7 @@
                                             </conditions>
                                             <actions>
                                                 <action id="0" name="Play" sid="948314415203281" type="Audio">
-                                                    <param id="0" name="Audio file">cat_meow_happy</param>
+                                                    <param id="0" name="Audio file">ding</param>
                                                     <param id="2" name="Loop">0</param>
                                                     <param id="3" name="Volume">0</param>
                                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -573,6 +573,23 @@
             <actions>
                 <action id="-9" name="Destroy" sid="559222720826154" type="Line" />
             </actions>
+            <sub-events>
+                <event-block sid="618780168901888">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="139709784660209" type="Audio">
+                            <param id="0" name="Tag">&quot;MainMusic&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="310601545778794" type="Audio">
+                            <param id="0" name="Audio file">MainMusic</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;MainMusic&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
