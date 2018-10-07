@@ -7,8 +7,8 @@
         <variable constant="0" name="CurrentRollID" sid="375986226917732" static="0" type="number">0</variable>
         <variable constant="0" name="SushiPlated" sid="816310062445041" static="0" type="number">0</variable>
         <variable constant="0" name="CurrentPlateCheck" sid="808955693587533" static="0" type="number">1</variable>
-        <variable constant="0" name="SushiPosX" sid="910313900341233" static="0" type="number">100</variable>
-        <variable constant="0" name="SushiPosY" sid="851847582792525" static="0" type="number">375</variable>
+        <variable constant="0" name="SushiPosX" sid="910313900341233" static="0" type="number">25</variable>
+        <variable constant="0" name="SushiPosY" sid="851847582792525" static="0" type="number">400</variable>
         <event-group description="" sid="916254740959041" title="Generate Sushi">
             <sub-events>
                 <event-block sid="431048043685822">
@@ -29,7 +29,7 @@
                         <action id="-3" name="Create object" sid="303291177148924" type="System">
                             <param id="0" name="Object to create">CutRoll</param>
                             <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">SushiPosX + 50 * loopindex</param>
+                            <param id="2" name="X">SushiPosX + 80 * loopindex-1</param>
                             <param id="3" name="Y">SushiPosY</param>
                         </action>
                         <action id="-10" name="Set value" sid="408083649448080" type="CutRoll">
@@ -274,22 +274,22 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="614726615476051">
+                        <event-block sid="950780538641450">
                             <conditions>
-                                <condition id="-10" name="For" sid="327348042922128" type="System">
+                                <condition id="-10" name="For" sid="383003327040680" type="System">
                                     <param id="0" name="Name">&quot;Ready Sparkling Plate&quot;</param>
                                     <param id="1" name="Start index">1</param>
                                     <param id="2" name="End index">18</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Create object" sid="634968924498662" type="System">
+                                <action id="-3" name="Create object" sid="250556118206028" type="System">
                                     <param id="0" name="Object to create">SparkleParticle</param>
                                     <param id="1" name="Layer">1</param>
                                     <param id="2" name="X">Plate.x</param>
                                     <param id="3" name="Y">Plate.y</param>
                                 </action>
-                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="552191117921156" type="SparkleParticle">
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="961935071183153" type="SparkleParticle">
                                     <param id="0" name="Angle">20*loopindex</param>
                                 </action>
                             </actions>
@@ -299,26 +299,26 @@
             </sub-events>
         </event-group>
         <event-group description="" sid="713289338905768" title="Serve" />
-        <event-block sid="215830467421430">
+        <event-block sid="821130291429716">
             <conditions>
-                <condition id="17" name="On tap object" sid="430082677726467" type="Touch">
+                <condition id="17" name="On tap object" sid="327211529531159" type="Touch">
                     <param id="0" name="Object">Serve</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Bullet" id="0" name="Set speed" sid="518463016045560" type="Plate">
+                <action behavior="Bullet" id="0" name="Set speed" sid="581325816264576" type="Plate">
                     <param id="0" name="Speed">400</param>
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="929592057895709">
+                <event-block sid="647817386487368">
                     <conditions>
-                        <condition id="-19" name="Pick all" sid="289535927585440" type="System">
+                        <condition id="-19" name="Pick all" sid="567068292226164" type="System">
                             <param id="0" name="Object">CutRoll</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="147133018523687" type="CutRoll">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="308816538334104" type="CutRoll">
                             <param id="0" name="Pin to">Plate</param>
                             <param id="1" name="Mode">0</param>
                         </action>

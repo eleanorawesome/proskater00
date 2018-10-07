@@ -92,14 +92,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>625</x>
-                        <y>240</y>
+                        <x>636.819396973</x>
+                        <y>208.182769775</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>438</width>
+                        <height>279</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.543379009</hotspotX>
+                        <hotspotY>0.523297489</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -123,42 +123,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>145.272842407</x>
-                        <y>548.727294922</y>
+                        <x>163.833831787</x>
+                        <y>574.234008789</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
+                        <width>96</width>
+                        <height>92</height>
                         <depth>0</depth>
-                        <hotspotX>0.439999998</hotspotX>
-                        <hotspotY>0.540000021</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Ingredient" uid="39">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <SushiID>0</SushiID>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>143.047195435</x>
-                        <y>549.067382813</y>
-                        <z>0</z>
-                        <width>17</width>
-                        <height>26</height>
-                        <depth>0</depth>
-                        <hotspotX>-0.117647059</hotspotX>
-                        <hotspotY>0.692307711</hotspotY>
+                        <hotspotX>0.40625</hotspotX>
+                        <hotspotY>0.532608688</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -176,8 +148,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>122.585113525</x>
-                        <y>124.854980469</y>
+                        <x>130.766464233</x>
+                        <y>208.490158081</y>
                         <z>0</z>
                         <width>95.199996948</width>
                         <height>87.599998474</height>
@@ -201,8 +173,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320.728973389</x>
-                        <y>126.069816589</y>
+                        <x>270.730041504</x>
+                        <y>207.891555786</y>
                         <z>0</z>
                         <width>93.104202271</width>
                         <height>85.671508789</height>
@@ -244,8 +216,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>290.359222412</x>
-                        <y>533.492553711</y>
+                        <x>453.087646484</x>
+                        <y>551.674255371</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -274,6 +246,34 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Ingredient" uid="74">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <SushiID>0</SushiID>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>163.543395996</x>
+                        <y>571.191589355</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>49</height>
+                        <depth>0</depth>
+                        <hotspotX>0.03125</hotspotX>
+                        <hotspotY>0.673469365</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
