@@ -13,9 +13,6 @@
                 <action id="10" name="Request fullscreen" sid="703864300388623" type="Browser">
                     <param id="0" name="Mode">3</param>
                 </action>
-                <action id="18" name="Lock orientation" sid="538184033765259" type="Browser">
-                    <param id="0" name="Orientation">1</param>
-                </action>
                 <action id="-2" name="Go to layout" sid="199882636717795" type="System">
                     <param id="0" name="Layout">Prep</param>
                 </action>
