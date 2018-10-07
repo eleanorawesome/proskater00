@@ -1006,8 +1006,46 @@
         </global-instance>
         <global-instance type="Browser" uid="52" />
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="chop_vegetable1.m4a" />
+        <file name="chop_vegetable1.ogg" />
+        <file name="chop_vegetable2.m4a" />
+        <file name="chop_vegetable2.ogg" />
+        <file name="chop_vegetable_knife.m4a" />
+        <file name="chop_vegetable_knife.ogg" />
+        <file name="cutting_sushi1.m4a" />
+        <file name="cutting_sushi1.ogg" />
+        <file name="placing_ingredients.m4a" />
+        <file name="placing_ingredients.ogg" />
+        <file name="placing_ingredients1.m4a" />
+        <file name="placing_ingredients1.ogg" />
+        <file name="placing_ingredients2.m4a" />
+        <file name="placing_ingredients2.ogg" />
+        <file name="placing_ingredients3.m4a" />
+        <file name="placing_ingredients3.ogg" />
+        <file name="placing_ingredients4.m4a" />
+        <file name="placing_ingredients4.ogg" />
+        <file name="placing_ingredients5.m4a" />
+        <file name="placing_ingredients5.ogg" />
+        <file name="placing_ingredients_soft1.m4a" />
+        <file name="placing_ingredients_soft1.ogg" />
+        <file name="placing_ingredients_soft2.m4a" />
+        <file name="placing_ingredients_soft2.ogg" />
+        <file name="plating_plop1.m4a" />
+        <file name="rice_nori_plop.m4a" />
+        <file name="rice_nori_plop2.m4a" />
+        <file name="slice_meat1.m4a" />
+        <file name="plating_plop1.ogg" />
+        <file name="rice_nori_plop.ogg" />
+        <file name="rice_nori_plop2.ogg" />
+        <file name="slice_meat1.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="MainMusic.m4a" />
+        <file name="MainMusic.ogg" />
+        <file name="MenuMusic.m4a" />
+        <file name="MenuMusic.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

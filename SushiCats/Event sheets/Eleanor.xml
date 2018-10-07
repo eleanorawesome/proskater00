@@ -187,7 +187,7 @@
                 </event-group>
                 <event-group description="" sid="820923097008762" title="ClawTHing">
                     <sub-events>
-                        <event-block sid="468591595831362">
+                        <event-block disabled="1" sid="468591595831362">
                             <conditions>
                                 <condition id="0" name="On any touch start" sid="172275591073846" type="Touch" />
                             </conditions>
@@ -208,7 +208,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="467049784835900">
+                        <event-block disabled="1" sid="467049784835900">
                             <conditions>
                                 <condition id="2" name="Is in touch" sid="488647407034723" type="Touch" />
                                 <condition id="-8" name="Is boolean instance variable set" sid="880379920492153" type="Line">
@@ -280,6 +280,12 @@
                         <action id="4" name="Set animation" sid="469680848921729" type="MoveIngredient">
                             <param id="0" name="Animation">PickIngredient.AnimationName</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="412301209928122" type="Audio">
+                            <param id="0" name="Audio file">placing_ingredients</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
