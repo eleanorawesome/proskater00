@@ -1325,6 +1325,9 @@
         <file name="scoop_rice2.ogg" />
         <file name="slice_meat1.m4a" />
         <file name="woosh.m4a" />
+        <file name="nori_crinkle.ogg" />
+        <file name="plating_plop1.ogg" />
+        <file name="rice_nori_plop.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="MainMusic.m4a" />
