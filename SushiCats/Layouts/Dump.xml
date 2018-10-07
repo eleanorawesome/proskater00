@@ -54,13 +54,16 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="01Sprite" uid="8">
+                <instance type="Container" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Ingredient></Ingredient>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -120,7 +123,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="04Sprite" uid="11">
+                <instance type="Piece" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -129,6 +132,7 @@
                     </properties>
                     <instance-variables>
                         <active>false</active>
+                        <id>0</id>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

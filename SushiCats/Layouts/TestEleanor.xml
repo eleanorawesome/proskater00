@@ -39,8 +39,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>733</x>
-                        <y>189</y>
+                        <x>427</x>
+                        <y>240.5</y>
                         <z>0</z>
                         <width>424</width>
                         <height>351</height>
@@ -64,8 +64,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>28</x>
-                        <y>141</y>
+                        <x>175</x>
+                        <y>240</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -94,8 +94,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>98</x>
-                        <y>12</y>
+                        <x>135</x>
+                        <y>68</y>
                         <z>0</z>
                         <width>630</width>
                         <height>334</height>
@@ -105,6 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="PreviousLine" uid="40">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -152,6 +153,8 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+=======
+>>>>>>> 6bbad4b6f905ab80d8e124f901745632befc554d
             </instances>
             <effects />
         </layer>

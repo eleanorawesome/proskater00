@@ -414,12 +414,18 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="PreviousLine" sid="693753094600773">
+        </object-folder>
+        <object-folder name="Ramy">
+            <object-type name="Container" sid="322390840567928">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Ingredient" sid="504895620532383" type="string" />
+                </instance-variables>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="659810987887083" speed="5">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669574087138062" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
+<<<<<<< HEAD
                 </animation-folder>
             </object-type>
             <object-type name="MoveIngredient" sid="918720875539352">
@@ -552,39 +558,42 @@
                                 <point x="0.114" y="0.5" />
                             </collision-poly>
                         </frame>
+=======
+                    <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="602985526687472" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+>>>>>>> 6bbad4b6f905ab80d8e124f901745632befc554d
                     </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="stuff2" sid="369146232890383">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997625734300932" speed="5">
+                    <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="746407087835308" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="stuff3" sid="897825608755940">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918007864270425" speed="5">
+                    <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="262721190321183" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="stuff4" sid="645200261013848">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="786509872941979" speed="5">
+                    <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="768870427591955" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
-                </animation-folder>
-            </object-type>
-        </object-folder>
-        <object-folder name="Ramy">
-            <object-type name="01Sprite" sid="322390840567928">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669574087138062" speed="5">
+                    <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="718372052446218" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="239747518022029" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="561902197318709" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="766565508432039" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="411011299867258" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Ginger" pingpong="0" repeatcount="1" repeatto="0" sid="959588041936331" speed="5">
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="C:\Users\ramy\Desktop\gingerbowl.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Wasabi" pingpong="0" repeatcount="1" repeatto="0" sid="372444694774716" speed="5">
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="C:\Users\ramy\Desktop\wasabibowl.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Nori" pingpong="0" repeatcount="1" repeatto="0" sid="208457607692578" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
@@ -605,14 +614,76 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="04Sprite" sid="190531322475751">
+            <object-type name="Piece" sid="190531322475751">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="active" sid="319351780859218" type="boolean" />
+                    <instance-variable name="id" sid="492213128300445" type="number" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804964645065668" speed="5">
                         <frame duration="1" hotspotX="0.520833" hotspotY="0.583333" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="498472371153867" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="748192072550324" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="629311058998827" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="273190647905505" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="607211857719342" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="692089926549964" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="400099049757956" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="370871978206202" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="835436844048956" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Ginger" pingpong="0" repeatcount="1" repeatto="0" sid="504586101926994" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ramy\Desktop\gingerpeice.png">
+                            <collision-poly>
+                                <point x="0.38" y="0.38" />
+                                <point x="0.5" y="0.2" />
+                                <point x="0.9" y="0.1" />
+                                <point x="0.68" y="0.5" />
+                                <point x="0.66" y="0.66" />
+                                <point x="0.5" y="0.84" />
+                                <point x="0.1" y="0.9" />
+                                <point x="0.38" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Wasabi" pingpong="0" repeatcount="1" repeatto="0" sid="835976661517594" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ramy\Desktop\wasabipiece.png">
+                            <collision-poly>
+                                <point x="0.32" y="0.32" />
+                                <point x="0.5" y="0.2" />
+                                <point x="0.68" y="0.32" />
+                                <point x="0.76" y="0.5" />
+                                <point x="0.7" y="0.7" />
+                                <point x="0.5" y="0.74" />
+                                <point x="0.32" y="0.68" />
+                                <point x="0.24" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Nori" pingpong="0" repeatcount="1" repeatto="0" sid="184628255461300" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Rice" pingpong="0" repeatcount="1" repeatto="0" sid="683446603116805" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
