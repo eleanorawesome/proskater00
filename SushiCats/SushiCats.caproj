@@ -96,8 +96,8 @@
                     </animation>
                     <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="311945243120922" speed="5">
                         <frame duration="1" hotspotX="0.504043" hotspotY="0.536" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_daikon.png">
-                            <image-point name="Imagepoint 1" x="-0.0835579" y="-0.016" />
-                            <image-point name="Imagepoint 2" x="1.07278" y="1" />
+                            <image-point name="Imagepoint 1" x="-0.0916442" y="0.744" />
+                            <image-point name="Imagepoint 2" x="1.04852" y="0.072" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="458816918243758" speed="5">
@@ -682,31 +682,10 @@
                         <frame duration="1" hotspotX="0.523929" hotspotY="0.508434" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_grilledeel.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="771661850286850" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502041" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_daikon.png">
-                            <collision-poly>
-                                <point x="0.344" y="0.344" />
-                                <point x="0.5" y="0.418" />
-                                <point x="0.534" y="0.466" />
-                                <point x="0.542" y="0.5" />
-                                <point x="0.778" y="0.778" />
-                                <point x="0.5" y="0.798" />
-                                <point x="0.304" y="0.696" />
-                                <point x="0.018" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502041" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_daikon.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="507509270018300" speed="5">
-                        <frame duration="1" hotspotX="0.501109" hotspotY="0.502183" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_cucumber.png">
-                            <collision-poly>
-                                <point x="0.316" y="0.316" />
-                                <point x="0.5" y="0.368" />
-                                <point x="0.566" y="0.434" />
-                                <point x="0.592" y="0.5" />
-                                <point x="0.83" y="0.83" />
-                                <point x="0.304" y="0.696" />
-                                <point x="0.028" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.501109" hotspotY="0.502183" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_cucumber.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="507509270018300" speed="5">
                         <frame duration="1" hotspotX="0.518847" hotspotY="0.423581" original-source="C:\Users\elean\Downloads\whole_cucumber.png" />
