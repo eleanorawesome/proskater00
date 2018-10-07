@@ -461,7 +461,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Daikon" uid="24">
+                <instance type="WorkArea" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -474,11 +474,11 @@
                         <x>381</x>
                         <y>304</y>
                         <z>0</z>
-                        <width>429</width>
-                        <height>356</height>
+                        <width>552</width>
+                        <height>277</height>
                         <depth>0</depth>
-                        <hotspotX>0.573426545</hotspotX>
-                        <hotspotY>0.376404494</hotspotY>
+                        <hotspotX>0.574275374</hotspotX>
+                        <hotspotY>0.375451267</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
