@@ -92,7 +92,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="WasabiPiece" uid="6">
+                <instance type="WasabiPiece" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -186,7 +186,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="CutRoll" uid="4">
+                <instance type="CutRoll" uid="36">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
