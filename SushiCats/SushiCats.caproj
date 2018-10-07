@@ -424,6 +424,9 @@
                             </collision-poly>
                         </frame>
                     </animation>
+                    <animation framecount="1" loop="0" name="Rice" pingpong="0" repeatcount="1" repeatto="0" sid="683446603116805" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="05Sprite" sid="622040047860612">

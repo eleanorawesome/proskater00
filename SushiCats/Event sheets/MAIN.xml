@@ -86,6 +86,12 @@
                         </action>
                         <action id="-24" name="Move to top" sid="356104536679076" type="Piece" />
                     </actions>
+                    <sub-events>
+                        <event-block sid="855039412314878">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="911314784782130">
                     <conditions>
