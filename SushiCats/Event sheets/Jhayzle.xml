@@ -65,6 +65,10 @@
                                     <param id="2" name="X">0</param>
                                     <param id="3" name="Y">0</param>
                                 </action>
+                                <action id="4" name="Set animation" sid="591166611009115" type="Ingredient">
+                                    <param id="0" name="Animation">Array.At(loopindex-1)</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
                                 <action id="-4" name="Set position to another object" sid="517002585559557" type="Ingredient">
                                     <param id="0" name="Object">CutRoll</param>
                                     <param id="1" name="Image point (optional)">0</param>
