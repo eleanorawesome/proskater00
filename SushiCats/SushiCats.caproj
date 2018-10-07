@@ -79,6 +79,7 @@
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="TouchID" sid="748984958240154" type="number" />
+                    <instance-variable name="Bowled" sid="897263068479208" type="boolean" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="862999971021369" speed="5">
@@ -174,16 +175,16 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570172775585662" speed="5">
-                        <frame duration="1" hotspotX="0.512894" hotspotY="0.516509" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_carrot.png">
+                        <frame duration="1" hotspotX="0.504202" hotspotY="0.484018" original-source="C:\Users\elean\Downloads\bowl.png">
                             <collision-poly>
-                                <point x="0.0229226" y="0.113208" />
-                                <point x="0.512894" y="0.285377" />
-                                <point x="0.647564" y="0.40566" />
-                                <point x="0.719198" y="0.516509" />
-                                <point x="0.888252" y="0.825472" />
-                                <point x="0.512894" y="0.764151" />
-                                <point x="0.352436" y="0.648585" />
-                                <point x="0.243553" y="0.516509" />
+                                <point x="0" y="0.0254163" />
+                                <point x="0.53489" y="0.237679" />
+                                <point x="0.701813" y="0.385974" />
+                                <point x="0.790603" y="0.522637" />
+                                <point x="1" y="0.90355" />
+                                <point x="0.53489" y="0.827949" />
+                                <point x="0.336003" y="0.68547" />
+                                <point x="0.201043" y="0.522637" />
                             </collision-poly>
                         </frame>
                     </animation>

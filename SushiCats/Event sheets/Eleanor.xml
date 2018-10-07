@@ -240,8 +240,25 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">Touch.TouchID</param>
                                         </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="109017098914846" type="CutIngredients">
+                                            <param id="0" name="Object">Bowls</param>
+                                        </condition>
+                                        <condition id="-15" name="Pick nearest/furthest" sid="289896418445233" type="Bowls">
+                                            <param id="0" name="Which">0</param>
+                                            <param id="1" name="X">Touch.XForID(CutIngredients.TouchID)</param>
+                                            <param id="2" name="Y">Touch.YForID(CutIngredients.TouchID)</param>
+                                        </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="716752880822582" type="CutIngredients">
+                                            <param id="0" name="X">Bowls.X</param>
+                                            <param id="1" name="Y">Bowls.Y</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="425653101120231" type="CutIngredients">
+                                            <param id="0" name="Instance variable">Bowled</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -304,6 +321,9 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">0</param>
                         </condition>
+                        <condition disabled="1" id="-8" inverted="1" name="Is boolean instance variable set" sid="407066841920035" type="CutIngredients">
+                            <param id="0" name="Instance variable">Bowled</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Spawn another object" sid="898137485765513" type="PickIngredient">
@@ -345,6 +365,9 @@
                             <param id="0" name="First value">MoveIngredient.Count</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="831482038532079" type="CutIngredients">
+                            <param id="0" name="Instance variable">Bowled</param>
                         </condition>
                     </conditions>
                     <actions>
