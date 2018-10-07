@@ -105,29 +105,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="PreviousLine" uid="40">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>559</x>
-                        <y>124</y>
-                        <z>0</z>
-                        <width>12</width>
-                        <height>12</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="MoveIngredient" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -153,8 +130,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-=======
->>>>>>> 6bbad4b6f905ab80d8e124f901745632befc554d
             </instances>
             <effects />
         </layer>

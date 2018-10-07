@@ -208,8 +208,6 @@
                                 </action>
                             </actions>
                         </event-block>
-<<<<<<< HEAD
-=======
                         <event-block sid="467049784835900">
                             <conditions>
                                 <condition id="2" name="Is in touch" sid="488647407034723" type="Touch" />
@@ -248,7 +246,6 @@
                             </conditions>
                             <actions />
                         </event-block>
->>>>>>> 6bbad4b6f905ab80d8e124f901745632befc554d
                     </sub-events>
                 </event-group>
                 <event-block sid="776257435908219">

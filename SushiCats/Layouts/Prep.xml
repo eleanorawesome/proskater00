@@ -263,12 +263,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-<<<<<<< HEAD
                         <TouchID>-1</TouchID>
-=======
-                        <TouchID>0</TouchID>
                         <Start>false</Start>
->>>>>>> 6bbad4b6f905ab80d8e124f901745632befc554d
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
