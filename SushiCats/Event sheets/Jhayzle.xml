@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jhayzle</name>
     <events>
+        <variable constant="0" name="Dinged" sid="714386001922035" static="0" type="number">0</variable>
         <variable constant="0" name="SelectedRoll" sid="502564142874221" static="0" type="number">-1</variable>
         <variable constant="0" name="CurrentRollID" sid="375986226917732" static="0" type="number">0</variable>
         <variable constant="0" name="SushiPlated" sid="816310062445041" static="0" type="number">0</variable>
@@ -99,6 +100,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="609467554163508" type="Audio">
+                            <param id="0" name="Audio file">placing_ingredients_soft1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="102860020600915" type="System">
                             <param id="0" name="Variable">SelectedRoll</param>
                             <param id="1" name="Value">CutRoll.ID</param>
@@ -153,6 +160,12 @@
                         <action id="-9" name="Set value" sid="382440123401294" type="System">
                             <param id="0" name="Variable">SelectedRoll</param>
                             <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="0" name="Play" sid="972449075308693" type="Audio">
+                            <param id="0" name="Audio file">placing_ingredients_soft2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -258,12 +271,22 @@
                 </event-block>
                 <event-block sid="426992600654023">
                     <conditions>
+                        <condition id="2" inverted="1" name="Is in touch" sid="467760322515335" type="Touch" />
+                        <condition behavior="Bullet" id="0" name="Compare speed" sid="668578778870929" type="Plate">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Speed">0</param>
+                        </condition>
                         <condition id="-14" name="Compare variable" sid="514095340329232" type="System">
                             <param id="0" name="Variable">SushiPlated</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">6</param>
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="749127629462498" type="System" />
+                        <condition id="-14" name="Compare variable" sid="815288884081775" type="System">
+                            <param id="0" name="Variable">Dinged</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="255499435279077" type="System">
@@ -271,6 +294,16 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">760</param>
                             <param id="3" name="Y">400</param>
+                        </action>
+                        <action id="0" name="Play" sid="473809955281323" type="Audio">
+                            <param id="0" name="Audio file">ding</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="129088588928130" type="System">
+                            <param id="0" name="Variable">Dinged</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -324,7 +357,30 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="700049003859328">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="100665974575020" type="Piece">
+                            <param id="0" name="Object">Plate</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="619708961805328" type="Piece">
+                            <param id="0" name="Pin to">Plate</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="975685588943735">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="456397148352977" type="Plate" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="407038504827243" type="System">
+                    <param id="0" name="Layout">Intro</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

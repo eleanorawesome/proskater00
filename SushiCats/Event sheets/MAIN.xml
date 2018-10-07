@@ -80,6 +80,60 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="427908353166359">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="252445325348107" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Rice&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="125332304613526" type="Audio">
+                                    <param id="0" name="Audio file">scoop_rice1</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="634495834204850">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="984447040846393" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Wasabi&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="604917291300688" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Ginger&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="935565245945178" type="Audio">
+                                    <param id="0" name="Audio file">picking_ingredient</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="952527518086194">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="186351079729607" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="717078219430003" type="Audio">
+                                    <param id="0" name="Audio file">placing_ingredients3</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="222559681733200">
                     <conditions>
@@ -129,6 +183,60 @@
                             <param id="1" name="Value">-1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="565957314357262">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="770231291052227" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Rice&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="913052231058242" type="Audio">
+                                    <param id="0" name="Audio file">rice_nori_plop</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="498280121342854">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="285300196082524" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Wasabi&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="354114550147026" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Ginger&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="143276538208550" type="Audio">
+                                    <param id="0" name="Audio file">placing_ingredients2</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="969830334224161">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="505312342305307" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="469080060207036" type="Audio">
+                                    <param id="0" name="Audio file">placing_ingredients4</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
