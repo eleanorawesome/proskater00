@@ -86,11 +86,21 @@
                                 <condition id="-7" name="Compare instance variable" sid="252445325348107" type="Piece">
                                     <param id="0" name="Instance variable">Ingredient</param>
                                     <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Nori&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="333702480321787">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="697744828391314" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;Rice&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="125332304613526" type="Audio">
+                                <action id="0" name="Play" sid="472806286083966" type="Audio">
                                     <param id="0" name="Audio file">scoop_rice1</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
@@ -184,6 +194,16 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="815773293658108">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="607328862700960" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Nori&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
                         <event-block sid="565957314357262">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="770231291052227" type="Piece">

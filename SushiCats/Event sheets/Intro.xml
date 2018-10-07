@@ -6,7 +6,7 @@
         <event-block sid="178617067652200">
             <conditions>
                 <condition id="17" name="On tap object" sid="413965987639069" type="Touch">
-                    <param id="0" name="Object">RamySprite09</param>
+                    <param id="0" name="Object">Cat</param>
                 </condition>
             </conditions>
             <actions>
