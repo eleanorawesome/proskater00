@@ -3,21 +3,21 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jhayzle</name>
     <events>
-        <variable constant="0" name="CurrentPlateCheck" sid="808955693587533" static="0" type="number">0</variable>
-        <variable constant="0" name="SushiPlated" sid="816310062445041" static="0" type="number">0</variable>
-        <variable constant="0" name="CurrentRollID" sid="375986226917732" static="0" type="number">0</variable>
         <variable constant="0" name="SelectedRoll" sid="502564142874221" static="0" type="number">-1</variable>
+        <variable constant="0" name="CurrentRollID" sid="375986226917732" static="0" type="number">0</variable>
+        <variable constant="0" name="SushiPlated" sid="816310062445041" static="0" type="number">0</variable>
+        <variable constant="0" name="CurrentPlateCheck" sid="808955693587533" static="0" type="number">1</variable>
+        <variable constant="0" name="SushiPosX" sid="910313900341233" static="0" type="number">100</variable>
+        <variable constant="0" name="SushiPosY" sid="851847582792525" static="0" type="number">375</variable>
         <event-group description="" sid="916254740959041" title="Generate Sushi">
             <sub-events>
-                <variable constant="0" name="SushiPosY" sid="851847582792525" static="0" type="number">375</variable>
-                <variable constant="0" name="SushiPosX" sid="910313900341233" static="0" type="number">100</variable>
                 <event-block sid="431048043685822">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="258477255697778" type="System" />
                         <condition id="-10" name="For" sid="104818055910867" type="System">
                             <param id="0" name="Name">&quot;Create Sushi&quot;</param>
-                            <param id="1" name="Start index">0</param>
-                            <param id="2" name="End index">5</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">6</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -34,6 +34,14 @@
                         <action id="-9" name="Set value" sid="419221204038254" type="System">
                             <param id="0" name="Variable">CurrentRollID</param>
                             <param id="1" name="Value">loopindex</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="239135477756762" type="CutRoll">
+                            <param id="0" name="Instance variable">LastPosX</param>
+                            <param id="1" name="Value">CutRoll.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="828101794919354" type="CutRoll">
+                            <param id="0" name="Instance variable">LastPosY</param>
+                            <param id="1" name="Value">CutRoll.Y</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -62,6 +70,10 @@
                                 </action>
                                 <action id="-8" name="Set angle" sid="893362331848699" type="Ingredient">
                                     <param id="0" name="Angle">120*(loopindex-1)</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="225242538558842" type="Ingredient">
+                                    <param id="0" name="Pin to">CutRoll</param>
+                                    <param id="1" name="Mode">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -105,20 +117,16 @@
                         <action id="-24" name="Move to top" sid="262834903599522" type="CutRoll" />
                     </actions>
                     <sub-events>
-                        <event-block sid="581580648841994">
+                        <event-block sid="662627739919627">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="561467523764038" type="Ingredient">
+                                <condition id="-7" name="Compare instance variable" sid="724508593315722" type="Ingredient">
                                     <param id="0" name="Instance variable">SushiID</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">SelectedRoll</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-4" name="Set position to another object" sid="523065902625488" type="Ingredient">
-                                    <param id="0" name="Object">CutRoll</param>
-                                    <param id="1" name="Image point (optional)">0</param>
-                                </action>
-                                <action id="-24" name="Move to top" sid="720674837752194" type="Ingredient" />
+                                <action id="-24" name="Move to top" sid="411814584004364" type="Ingredient" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -126,9 +134,6 @@
                 <event-block sid="956430372173795">
                     <conditions>
                         <condition id="1" name="On any touch end" sid="434846196811685" type="Touch" />
-                        <condition id="1" name="Is overlapping another object" sid="763099556345424" type="CutRoll">
-                            <param id="0" name="Object">Plate</param>
-                        </condition>
                         <condition id="-7" name="Compare instance variable" sid="915170837566824" type="CutRoll">
                             <param id="0" name="Instance variable">ID</param>
                             <param id="1" name="Comparison">0</param>
@@ -136,15 +141,47 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="699945616068777" type="CutRoll">
-                            <param id="0" name="X">Touch.X </param>
-                            <param id="1" name="Y">Touch.Y</param>
-                        </action>
                         <action id="-9" name="Set value" sid="382440123401294" type="System">
                             <param id="0" name="Variable">SelectedRoll</param>
                             <param id="1" name="Value">-1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="851270393583258">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="763099556345424" type="CutRoll">
+                                    <param id="0" name="Object">Plate</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="699945616068777" type="CutRoll">
+                                    <param id="0" name="X">Touch.X </param>
+                                    <param id="1" name="Y">Touch.Y</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="347225362409072" type="CutRoll">
+                                    <param id="0" name="Instance variable">LastPosX</param>
+                                    <param id="1" name="Value">Touch.X</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="194410679174191" type="CutRoll">
+                                    <param id="0" name="Instance variable">LastPosY</param>
+                                    <param id="1" name="Value">Touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="840818821121120">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="538895437540814" type="CutRoll">
+                                    <param id="0" name="Object">Plate</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="500374433371559" type="CutRoll">
+                                    <param id="0" name="X">Self.LastPosX</param>
+                                    <param id="1" name="Y">Self.LastPosY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -180,8 +217,8 @@
                     <conditions>
                         <condition id="-10" name="For" sid="971153650227206" type="System">
                             <param id="0" name="Name">&quot;Count Plated Sushi&quot;</param>
-                            <param id="1" name="Start index">0</param>
-                            <param id="2" name="End index">5</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">6</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -219,7 +256,14 @@
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="749127629462498" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-3" name="Create object" sid="255499435279077" type="System">
+                            <param id="0" name="Object to create">Serve</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">760</param>
+                            <param id="3" name="Y">400</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="614726615476051">
                             <conditions>
@@ -245,5 +289,33 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="713289338905768" title="Serve" />
+        <event-block sid="215830467421430">
+            <conditions>
+                <condition id="17" name="On tap object" sid="430082677726467" type="Touch">
+                    <param id="0" name="Object">Serve</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="518463016045560" type="Plate">
+                    <param id="0" name="Speed">400</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="929592057895709">
+                    <conditions>
+                        <condition id="-19" name="Pick all" sid="289535927585440" type="System">
+                            <param id="0" name="Object">CutRoll</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="147133018523687" type="CutRoll">
+                            <param id="0" name="Pin to">Plate</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
