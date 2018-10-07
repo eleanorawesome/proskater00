@@ -1454,13 +1454,13 @@
         <event-sheet>Intro.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Function" uid="50" />
-        <global-instance type="Touch" uid="52">
+        <global-instance type="Function" uid="57" />
+        <global-instance type="Touch" uid="77">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="54">
+        <global-instance type="Audio" uid="78">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1474,7 +1474,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="57" />
+        <global-instance type="Browser" uid="79" />
     </global-instances>
     <sounds-folder>
         <file name="cat_eating.m4a" />
