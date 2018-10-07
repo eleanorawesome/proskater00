@@ -258,6 +258,13 @@
             </properties>
         </instance>
         <instance type="Dictionary" uid="5" />
+        <instance type="Jhayzleimage04" uid="61">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects />
 </c2layout>
