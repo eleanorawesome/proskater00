@@ -138,7 +138,13 @@
                     </properties>
                     <instance-variables>
                         <Ingredient></Ingredient>
+                        <xOffset>0</xOffset>
+                        <yOffset>0</yOffset>
+                        <active>false</active>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
