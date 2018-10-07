@@ -244,7 +244,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100535019394004" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.503401" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -345,7 +345,10 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566417125647638" speed="5">
-                        <frame duration="1" hotspotX="0.38" hotspotY="0.48">
+                        <frame duration="1" hotspotX="0.44" hotspotY="0.54">
+                            <image-point name="Ingredient 1" x="0.44" y="0.38" />
+                            <image-point name="Ingredient 2" x="0.28" y="0.66" />
+                            <image-point name="Ingredient 3" x="0.56" y="0.66" />
                             <collision-poly>
                                 <point x="0.00400001" y="0.992095" />
                                 <point x="0.00400001" y="0.00790501" />
@@ -412,6 +415,9 @@
             </object-type>
             <object-type name="Ingredient" sid="929346756992921">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SushiID" sid="809348165888555" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457455369377926" speed="5">
                         <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
