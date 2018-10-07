@@ -493,24 +493,27 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Eleanor06" uid="27">
+                <instance type="PickIngredient" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <TouchID>-1</TouchID>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>424</x>
                         <y>288</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>262</width>
+                        <height>421</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.48854962</hotspotX>
+                        <hotspotY>0.47505939</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
