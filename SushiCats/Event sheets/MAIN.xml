@@ -3,12 +3,28 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MAIN</name>
     <events>
+        <variable constant="0" name="MAIN_LatestID" sid="616412103633168" static="0" type="number">0</variable>
+        <variable constant="0" name="MAIN_SelectedIngredient" sid="809627495335638" static="0" type="number">-1</variable>
         <include>Ramy</include>
         <include>Jhayzle</include>
         <include>Jennifer</include>
         <include>Eleanor</include>
         <event-group description="" sid="882532419829115" title="Grabbable">
             <sub-events>
+                <event-block sid="777220176095600">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="212030453133127" type="System" />
+                        <condition id="-19" name="Pick all" sid="208088286857139" type="System">
+                            <param id="0" name="Object">Container</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="820481030169062" type="Container">
+                            <param id="0" name="Animation">Container.Ingredient</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="118172463177467">
                     <conditions>
                         <condition id="3" name="On touched object" sid="225149565477255" type="Touch">
@@ -22,25 +38,20 @@
                             <param id="2" name="X">Touch.X</param>
                             <param id="3" name="Y">Touch.Y</param>
                         </action>
+                        <action id="4" name="Set animation" sid="488879923914946" type="Piece">
+                            <param id="0" name="Animation">Container.Ingredient</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="-14" name="Toggle boolean" sid="230957706884974" type="Piece">
                             <param id="0" name="Instance variable">active</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="911314784782130">
-                    <conditions>
-                        <condition id="1" name="On any touch end" sid="886057605531455" type="Touch" />
-                        <condition id="-8" name="Is boolean instance variable set" sid="386136213918747" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Toggle boolean" sid="530644038345339" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
+                        <action id="-10" name="Set value" sid="926437949942053" type="Piece">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Value">MAIN_LatestID</param>
                         </action>
-                        <action id="-3" name="Set position" sid="703272607481779" type="Piece">
-                            <param id="0" name="X">Touch.X</param>
-                            <param id="1" name="Y">Touch.Y</param>
+                        <action id="-10" name="Add to" sid="747288703573365" type="System">
+                            <param id="0" name="Variable">MAIN_LatestID</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -49,30 +60,44 @@
                         <condition id="3" name="On touched object" sid="744034993190893" type="Touch">
                             <param id="0" name="Object">Piece</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="380901997414489" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
+                        <condition id="-15" name="Pick nearest/furthest" sid="911394240982097" type="Piece">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="X">Touch.X</param>
+                            <param id="2" name="Y">Touch.Y</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-14" name="Toggle boolean" sid="612588698179957" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="553255689659061" type="Piece">
-                            <param id="0" name="X">Touch.X</param>
-                            <param id="1" name="Y">Touch.Y</param>
+                        <action id="-9" name="Set value" sid="150377330744716" type="System">
+                            <param id="0" name="Variable">MAIN_SelectedIngredient</param>
+                            <param id="1" name="Value">Piece.UID</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="222559681733200">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="241264341289699" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
+                        <condition id="-14" name="Pick by unique ID" sid="723496135842593" type="Piece">
+                            <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="612330915989631" type="Piece">
                             <param id="0" name="X">Touch.X</param>
                             <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="356104536679076" type="Piece" />
+                    </actions>
+                </event-block>
+                <event-block sid="911314784782130">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="886057605531455" type="Touch" />
+                        <condition id="-14" name="Pick by unique ID" sid="100515053903994" type="Piece">
+                            <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="210020059205508" type="System">
+                            <param id="0" name="Variable">MAIN_SelectedIngredient</param>
+                            <param id="1" name="Value">-1</param>
                         </action>
                     </actions>
                 </event-block>

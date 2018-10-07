@@ -236,7 +236,7 @@
                     </properties>
                     <instance-variables>
                         <TouchID>0</TouchID>
-                        <Start>true</Start>
+                        <Start>false</Start>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
