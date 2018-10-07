@@ -411,16 +411,16 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-3" name="Create object" sid="665111982816325" type="System">
-                            <param id="0" name="Object to create">RamySprite00</param>
+                            <param id="0" name="Object to create">SushiMat</param>
                             <param id="1" name="Layer">2</param>
                             <param id="2" name="X">400</param>
                             <param id="3" name="Y">400</param>
                         </action>
                         <action id="-9" name="Set value" sid="406952514725696" type="System">
                             <param id="0" name="Variable">ASSEMBLY_BambooUID</param>
-                            <param id="1" name="Value">RamySprite00.UID</param>
+                            <param id="1" name="Value">SushiMat.UID</param>
                         </action>
-                        <action id="-6" name="Set height" sid="898412920780795" type="RamySprite00">
+                        <action id="-6" name="Set height" sid="898412920780795" type="SushiMat">
                             <param id="0" name="Height">0</param>
                         </action>
                     </actions>
@@ -462,7 +462,7 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="228207014207038" type="RamySprite00">
+                        <condition id="-14" name="Pick by unique ID" sid="228207014207038" type="SushiMat">
                             <param id="0" name="Unique ID">ASSEMBLY_BambooUID</param>
                         </condition>
                     </conditions>
@@ -471,7 +471,7 @@
                             <param id="0" name="Variable">ASSEMBLY_RollCount</param>
                             <param id="1" name="Value">250*0.01*dt</param>
                         </action>
-                        <action id="-6" name="Set height" sid="121097840062987" type="RamySprite00">
+                        <action id="-6" name="Set height" sid="121097840062987" type="SushiMat">
                             <param id="0" name="Height">ASSEMBLY_RollCount</param>
                         </action>
                     </actions>
