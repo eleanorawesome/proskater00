@@ -593,7 +593,7 @@
                                 <point x="0.114" y="0.5" />
                             </collision-poly>
                         </frame>
-					</animation>
+                    </animation>
                 </animation-folder>
             </object-type>
             <object-type name="02Sprite" sid="638144134003891">
