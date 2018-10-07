@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Ramy</name>
     <events>
-        <variable constant="1" name="ASSEMBLY_PROBABILITYPLAYINGROLLSOUND" sid="864089728626075" static="0" type="number">95</variable>
+        <variable constant="1" name="ASSEMBLY_PROBABILITYPLAYINGROLLSOUND" sid="864089728626075" static="0" type="number">20</variable>
         <variable constant="1" name="ASSEMBLY_MAXIMUMROLLCOUNT" sid="704755141229313" static="0" type="number">5</variable>
         <variable constant="1" name="ASSEMBLY_ROLLCOUNTTARGET" sid="432910125529938" static="0" type="number">100</variable>
         <variable constant="1" name="ASSEMBLY_ROLL_YOFFSET_MULTIPLIER" sid="885130447864548" static="0" type="number">0.01</variable>
@@ -36,7 +36,7 @@
                             <conditions>
                                 <condition id="-2" name="On start of layout" sid="574458689166343" type="System" />
                                 <condition id="-14" name="Pick by unique ID" sid="735825190758317" type="Container">
-                                    <param id="0" name="Unique ID">1</param>
+                                    <param id="0" name="Unique ID">2</param>
                                 </condition>
                                 <condition id="0" name="Compare at X" sid="124857024192647" type="Array">
                                     <param id="0" name="X">0</param>
@@ -59,7 +59,7 @@
                             <conditions>
                                 <condition id="-2" name="On start of layout" sid="871009062377583" type="System" />
                                 <condition id="-14" name="Pick by unique ID" sid="892942513471897" type="Container">
-                                    <param id="0" name="Unique ID">2</param>
+                                    <param id="0" name="Unique ID">3</param>
                                 </condition>
                                 <condition id="0" name="Compare at X" sid="592480601038412" type="Array">
                                     <param id="0" name="X">0</param>
@@ -82,7 +82,7 @@
                             <conditions>
                                 <condition id="-2" name="On start of layout" sid="997524462028534" type="System" />
                                 <condition id="-14" name="Pick by unique ID" sid="472497052469307" type="Container">
-                                    <param id="0" name="Unique ID">3</param>
+                                    <param id="0" name="Unique ID">35</param>
                                 </condition>
                                 <condition id="0" name="Compare at X" sid="311139370625928" type="Array">
                                     <param id="0" name="X">0</param>
