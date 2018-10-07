@@ -146,6 +146,12 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="836056625988712" type="MoveIngredient" />
+                                                <action id="0" name="Play" sid="477184107685136" type="Audio">
+                                                    <param id="0" name="Audio file">chomp_chomp</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="530490747082228">
@@ -187,6 +193,13 @@
                                                 <action id="-10" name="Set value" sid="999867875600073" type="MoveIngredient">
                                                     <param id="0" name="Instance variable">TouchID</param>
                                                     <param id="1" name="Value">-1</param>
+                                                </action>
+                                                <action id="7" name="Play (by name)" sid="537494075159719" type="Audio">
+                                                    <param id="0" name="Folder">0</param>
+                                                    <param id="1" name="Audio file name">choose(&quot;heavy_plop1&quot;,&quot;heavy_plop2&quot;,&quot;heave_plop3&quot;)</param>
+                                                    <param id="3" name="Loop">0</param>
+                                                    <param id="4" name="Volume">0</param>
+                                                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -271,6 +284,13 @@
                                             <param id="0" name="X">Bowls.BowlID</param>
                                             <param id="1" name="Value">CutIngredients.AnimationName</param>
                                         </action>
+                                        <action id="7" name="Play (by name)" sid="443534000889809" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">choose(&quot;plop_into_bowl1&quot;,&quot;plop_into_bowl2&quot;)</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">0</param>
+                                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                     <sub-events>
                                         <event-block sid="859853136157353">
@@ -298,6 +318,9 @@
                                                     <param id="3" name="Volume">0</param>
                                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                                 </action>
+                                                <action id="-25" name="Go to layout (by name)" sid="310198953690460" type="System">
+                                                    <param id="0" name="Layout">&quot;Assemble&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -322,6 +345,12 @@
                                     <actions>
                                         <action id="-9" name="Destroy" sid="145743530007250" type="CutIngredients" />
                                         <action id="-9" name="Destroy" sid="889617234136697" type="MoveIngredient" />
+                                        <action id="0" name="Play" sid="978642385900068" type="Audio">
+                                            <param id="0" name="Audio file">chomp_chomp</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="517479501741743">
@@ -392,6 +421,41 @@
                                                 <action id="-9" name="Destroy" sid="578936937159824" type="TouchYES" />
                                             </actions>
                                         </event-block>
+                                        <event-block any="1" sid="539966706613234">
+                                            <conditions>
+                                                <condition id="2" name="Is playing" sid="396919691463072" type="CutIngredients">
+                                                    <param id="0" name="Animation">&quot;Cucumber&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="655847010038948" type="CutIngredients">
+                                                    <param id="0" name="Animation">&quot;Daikon&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="727243823078971" type="CutIngredients">
+                                                    <param id="0" name="Animation">&quot;Carrot&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Play (by name)" sid="586406904292845" type="Audio">
+                                                    <param id="0" name="Folder">0</param>
+                                                    <param id="1" name="Audio file name">choose(&quot;chop_vegetable1&quot;,&quot;chop_Vegetable2&quot;,&quot;chop_vegetable_knife&quot;)</param>
+                                                    <param id="3" name="Loop">0</param>
+                                                    <param id="4" name="Volume">0</param>
+                                                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="216370527364345">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="335962487624565" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="585825088341742" type="Audio">
+                                                    <param id="0" name="Audio file">cutting_sushi1</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                     </sub-events>
                                 </event-block>
                             </sub-events>
@@ -445,12 +509,11 @@
                             <param id="0" name="Animation">PickIngredient.AnimationName</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="7" name="Play (by name)" sid="412301209928122" type="Audio">
-                            <param id="0" name="Folder">0</param>
-                            <param id="1" name="Audio file name">&quot;&quot;</param>
-                            <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">0</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        <action id="0" name="Play" sid="412301209928122" type="Audio">
+                            <param id="0" name="Audio file">picking_ingredient</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -474,6 +537,30 @@
                         <action id="-10" name="Set value" sid="526315703345544" type="CutIngredients">
                             <param id="0" name="Instance variable">TouchID</param>
                             <param id="1" name="Value">Touch.TouchID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368192221377560">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="349665351417693" type="System">
+                            <param id="0" name="First value">MoveIngredient.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="413413073248737" type="zone01">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="592480240106024">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="138686811606464" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="426960551726103" type="zone01">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>

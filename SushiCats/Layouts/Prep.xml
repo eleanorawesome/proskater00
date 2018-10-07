@@ -55,6 +55,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="WorkArea" uid="74">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>541</x>
+                        <y>180</y>
+                        <z>0</z>
+                        <width>968.959289551</width>
+                        <height>486.235046387</height>
+                        <depth>0</depth>
+                        <hotspotX>0.574275374</hotspotX>
+                        <hotspotY>0.375451267</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="PickIngredient" uid="41">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -68,8 +90,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>237</x>
-                        <y>81</y>
+                        <x>239</x>
+                        <y>74</y>
                         <z>0</z>
                         <width>65.321594238</width>
                         <height>104.96333313</height>
@@ -194,7 +216,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>796</x>
-                        <y>65</y>
+                        <y>74</y>
                         <z>0</z>
                         <width>97.89994812</width>
                         <height>99.857948303</height>
@@ -218,11 +240,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>157</x>
-                        <y>84</y>
+                        <x>156.999984741</x>
+                        <y>75.834899902</y>
                         <z>0</z>
-                        <width>100.734725952</width>
-                        <height>122.382591248</height>
+                        <width>101</width>
+                        <height>103</height>
                         <depth>0</depth>
                         <hotspotX>0.512893975</hotspotX>
                         <hotspotY>0.516509414</hotspotY>
@@ -280,9 +302,31 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="CuttingBoardMArker" uid="40">
+                <instance type="CuttinBoard" uid="75">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>364</x>
+                        <y>323</y>
+                        <z>0</z>
+                        <width>576</width>
+                        <height>277</height>
+                        <depth>0</depth>
+                        <hotspotX>0.560763896</hotspotX>
+                        <hotspotY>0.519855618</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CuttingBoardMArker" uid="40">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -294,7 +338,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>338</x>
-                        <y>316</y>
+                        <y>295</y>
                         <z>0</z>
                         <width>662</width>
                         <height>219</height>
@@ -307,7 +351,7 @@
                 </instance>
                 <instance type="CuttingBoardMArker" uid="53">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -318,8 +362,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>340.061218262</x>
-                        <y>455</y>
+                        <x>340</x>
+                        <y>447</y>
                         <z>0</z>
                         <width>674</width>
                         <height>61</height>
@@ -344,7 +388,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>789</x>
-                        <y>178</y>
+                        <y>198</y>
                         <z>0</z>
                         <width>119.866706848</width>
                         <height>110.29750824</height>
@@ -368,8 +412,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>788</x>
-                        <y>297</y>
+                        <x>789</x>
+                        <y>309</y>
                         <z>0</z>
                         <width>123.955970764</width>
                         <height>114.06035614</height>
@@ -393,8 +437,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>786</x>
-                        <y>412</y>
+                        <x>789</x>
+                        <y>422</y>
                         <z>0</z>
                         <width>122.895980835</width>
                         <height>113.084953308</height>
@@ -402,6 +446,35 @@
                         <hotspotX>0.50420171</hotspotX>
                         <hotspotY>0.484018266</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="zone01" uid="76">
+                    <properties>
+                        <left-margin>4</left-margin>
+                        <right-margin>4</right-margin>
+                        <top-margin>4</top-margin>
+                        <bottom-margin>4</bottom-margin>
+                        <edges>Tile</edges>
+                        <fill>Stretch</fill>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                        <seams>Overlap</seams>
+                    </properties>
+                    <instance-variables>
+                        <ZoneName>&quot;CuttingBoard&quot;</ZoneName>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6</x>
+                        <y>18</y>
+                        <z>0</z>
+                        <width>846</width>
+                        <height>117</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <opacity>1</opacity>
                     </world>
                 </instance>
