@@ -79,31 +79,6 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block disabled="1" sid="780207124410787">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="924449366467472" type="Touch">
-                            <param id="0" name="Object">06Sprite</param>
-                        </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="411948713716743" type="06Sprite">
-                            <param id="0" name="Instance variable">active</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="427502453300964" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-15" name="Pick nearest/furthest" sid="702705873602316" type="06Sprite">
-                            <param id="0" name="Which">0</param>
-                            <param id="1" name="X">Touch.X</param>
-                            <param id="2" name="Y">Touch.Y</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Toggle boolean" sid="121247118086327" type="06Sprite">
-                            <param id="0" name="Instance variable">active</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="989731265749115">
                     <conditions>
                         <condition id="1" name="On any touch end" sid="261859294765729" type="Touch" />
