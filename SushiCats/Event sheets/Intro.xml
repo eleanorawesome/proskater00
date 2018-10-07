@@ -14,7 +14,7 @@
                     <param id="0" name="Mode">3</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="199882636717795" type="System">
-                    <param id="0" name="Layout">Assemble</param>
+                    <param id="0" name="Layout">Prep</param>
                 </action>
             </actions>
         </event-block>
