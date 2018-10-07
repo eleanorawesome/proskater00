@@ -86,12 +86,24 @@
                         </action>
                         <action id="-24" name="Move to top" sid="356104536679076" type="Piece" />
                     </actions>
-                    <sub-events>
-                        <event-block sid="855039412314878">
-                            <conditions />
-                            <actions />
-                        </event-block>
-                    </sub-events>
+                </event-block>
+                <event-block sid="835587344520711">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="476293659975947" type="Touch" />
+                        <condition id="-14" name="Pick by unique ID" sid="694297282204690" type="Piece">
+                            <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="871892280560973" type="Piece">
+                            <param id="0" name="Object">RamySprite01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="609350101064106" type="Piece" />
+                        <action id="-9" name="Set value" sid="288076868228592" type="System">
+                            <param id="0" name="Variable">MAIN_SelectedIngredient</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="911314784782130">
                     <conditions>
