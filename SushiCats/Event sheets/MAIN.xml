@@ -62,6 +62,9 @@
                             <param id="1" name="X">Touch.X</param>
                             <param id="2" name="Y">Touch.Y</param>
                         </condition>
+                        <condition id="-16" name="Is on layer" sid="777104401048620" type="Piece">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="150377330744716" type="System">
