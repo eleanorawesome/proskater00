@@ -146,12 +146,6 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="836056625988712" type="MoveIngredient" />
-                                                <action id="0" name="Play" sid="287453085316999" type="Audio">
-                                                    <param id="0" name="Audio file">plating_plop1</param>
-                                                    <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">0</param>
-                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="530490747082228">
