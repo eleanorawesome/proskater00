@@ -157,7 +157,7 @@
                         <width>17</width>
                         <height>26</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
+                        <hotspotX>-0.117647059</hotspotX>
                         <hotspotY>0.692307711</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -179,8 +179,8 @@
                         <x>122.585113525</x>
                         <y>124.854980469</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>100</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

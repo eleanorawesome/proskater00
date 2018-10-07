@@ -508,15 +508,15 @@
                         <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="C:\Users\ramy\Desktop\wasabibowl.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="Nori" pingpong="0" repeatcount="1" repeatto="0" sid="208457607692578" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\nori.png">
+                        <frame duration="1" hotspotX="0.490909" hotspotY="0.481818" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\nori.png">
                             <collision-poly>
-                                <point x="0.0609375" y="0.108333" />
-                                <point x="0.939062" y="0.108333" />
-                                <point x="0.978125" y="0.5" />
-                                <point x="0.967188" y="0.941667" />
-                                <point x="0.5" y="0.941667" />
-                                <point x="0.046875" y="0.916667" />
-                                <point x="0.0427083" y="0.5" />
+                                <point x="0.0325733" y="0.0238353" />
+                                <point x="0.947883" y="0.0238353" />
+                                <point x="0.988599" y="0.482124" />
+                                <point x="0.977199" y="0.998917" />
+                                <point x="0.490228" y="0.998917" />
+                                <point x="0.0179153" y="0.969664" />
+                                <point x="0.0135722" y="0.482124" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -744,15 +744,15 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Nori" pingpong="0" repeatcount="1" repeatto="0" sid="184628255461300" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\nori.png">
+                        <frame duration="1" hotspotX="0.455" hotspotY="0.407407" original-source="C:\Users\jhaya\Pictures\Sushi Cats Assets\nori.png">
                             <collision-poly>
-                                <point x="0.0609375" y="0.108333" />
-                                <point x="0.939062" y="0.108333" />
-                                <point x="0.978125" y="0.5" />
-                                <point x="0.967188" y="0.941667" />
-                                <point x="0.5" y="0.941667" />
-                                <point x="0.046875" y="0.916667" />
-                                <point x="0.0427083" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.970836" y="0" />
+                                <point x="1" y="0.400322" />
+                                <point x="1" y="1" />
+                                <point x="0.456257" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.400322" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1257,6 +1257,22 @@
         <global-instance type="Browser" uid="57" />
     </global-instances>
     <sounds-folder>
+        <file name="cat_eating.m4a" />
+        <file name="cat_eating.ogg" />
+        <file name="cat_eating_between_purrs.m4a" />
+        <file name="cat_eating_between_purrs.ogg" />
+        <file name="cat_meow1.m4a" />
+        <file name="cat_meow1.ogg" />
+        <file name="cat_meow2.m4a" />
+        <file name="cat_meow2.ogg" />
+        <file name="cat_meow3.m4a" />
+        <file name="cat_meow3.ogg" />
+        <file name="cat_meow_happy.m4a" />
+        <file name="cat_meow_happy.ogg" />
+        <file name="cat_purring.m4a" />
+        <file name="cat_purring.ogg" />
+        <file name="chomp_chomp.m4a" />
+        <file name="chomp_chomp.ogg" />
         <file name="chop_vegetable1.m4a" />
         <file name="chop_vegetable1.ogg" />
         <file name="chop_vegetable2.m4a" />
@@ -1265,6 +1281,17 @@
         <file name="chop_vegetable_knife.ogg" />
         <file name="cutting_sushi1.m4a" />
         <file name="cutting_sushi1.ogg" />
+        <file name="ding.m4a" />
+        <file name="ding.ogg" />
+        <file name="heavy_plop1.m4a" />
+        <file name="heavy_plop1.ogg" />
+        <file name="heavy_plop2.m4a" />
+        <file name="heavy_plop2.ogg" />
+        <file name="heavy_plop3.m4a" />
+        <file name="heavy_plop3.ogg" />
+        <file name="nori_crinkle.m4a" />
+        <file name="picking_ingredient.m4a" />
+        <file name="picking_ingredient.ogg" />
         <file name="placing_ingredients.m4a" />
         <file name="placing_ingredients.ogg" />
         <file name="placing_ingredients1.m4a" />
@@ -1281,14 +1308,23 @@
         <file name="placing_ingredients_soft1.ogg" />
         <file name="placing_ingredients_soft2.m4a" />
         <file name="placing_ingredients_soft2.ogg" />
+        <file name="plating_done.m4a" />
+        <file name="plating_done.ogg" />
         <file name="plating_plop1.m4a" />
+        <file name="plop_into_bowl1.m4a" />
+        <file name="plop_into_bowl1.ogg" />
+        <file name="plop_into_bowl2.m4a" />
+        <file name="plop_into_bowl2.ogg" />
         <file name="rice_nori_plop.m4a" />
         <file name="rice_nori_plop2.m4a" />
+        <file name="rolling_sushi1.m4a" />
+        <file name="rolling_sushi1.ogg" />
+        <file name="scoop_rice1.m4a" />
+        <file name="scoop_rice1.ogg" />
+        <file name="scoop_rice2.m4a" />
+        <file name="scoop_rice2.ogg" />
         <file name="slice_meat1.m4a" />
-        <file name="plating_plop1.ogg" />
-        <file name="rice_nori_plop.ogg" />
-        <file name="rice_nori_plop2.ogg" />
-        <file name="slice_meat1.ogg" />
+        <file name="woosh.m4a" />
     </sounds-folder>
     <music-folder>
         <file name="MainMusic.m4a" />
