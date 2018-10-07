@@ -175,7 +175,7 @@
                                                     <param id="1" name="From">1</param>
                                                 </action>
                                                 <action id="9" name="Set scale" sid="584985964493129" type="CutIngredients">
-                                                    <param id="0" name="Scale">0.4</param>
+                                                    <param id="0" name="Scale">0.2</param>
                                                 </action>
                                                 <action id="-15" name="Set visible" sid="117366792977551" type="CutIngredients">
                                                     <param id="0" name="Visibility">0</param>
@@ -183,6 +183,10 @@
                                                 <action id="-13" name="Set boolean" sid="510268387906909" type="MoveIngredient">
                                                     <param id="0" name="Instance variable">Set</param>
                                                     <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="999867875600073" type="MoveIngredient">
+                                                    <param id="0" name="Instance variable">TouchID</param>
+                                                    <param id="1" name="Value">-1</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -258,6 +262,87 @@
                                             <param id="0" name="Instance variable">Bowled</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-10" name="Set value" sid="489655021694964" type="CutIngredients">
+                                            <param id="0" name="Instance variable">TouchID</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="752797488496825" type="MoveIngredient" />
+                                        <action id="2" name="Set at X" sid="898279675510838" type="Array">
+                                            <param id="0" name="X">Bowls.BowlID</param>
+                                            <param id="1" name="Value">CutIngredients.AnimationName</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="859853136157353">
+                                            <conditions>
+                                                <condition id="0" name="Compare at X" sid="749719089943417" type="Array">
+                                                    <param id="0" name="X">0</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="0" name="Compare at X" sid="327384635270242" type="Array">
+                                                    <param id="0" name="X">1</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="0" name="Compare at X" sid="206003433472717" type="Array">
+                                                    <param id="0" name="X">2</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="948314415203281" type="Audio">
+                                                    <param id="0" name="Audio file">cat_meow_happy</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="241199664122858">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="438294893704832" type="System" />
+                                        <condition id="1" name="Is overlapping another object" sid="787378283503137" type="CutIngredients">
+                                            <param id="0" name="Object">CuttingBoardMArker</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="915262040835901" type="CuttingBoardMArker">
+                                            <param id="0" name="Instance variable">ZoneName</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;NomNom&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="866969246198481" type="CutIngredients">
+                                            <param id="0" name="Instance variable">TouchID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Touch.TouchID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="145743530007250" type="CutIngredients" />
+                                        <action id="-9" name="Destroy" sid="889617234136697" type="MoveIngredient" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="517479501741743">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="191724041898118" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="151954117669290" type="CuttingBoardMArker">
+                                            <param id="0" name="Instance variable">ZoneName</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;CuttingBoard&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="861740881138575" type="CutIngredients">
+                                            <param id="0" name="Instance variable">TouchID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Touch.TouchID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="930200990187205" type="CutIngredients">
+                                            <param id="0" name="X">CuttingBoardMArker.X</param>
+                                            <param id="1" name="Y">CuttingBoardMArker.Y</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -284,13 +369,30 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="213963201051484" type="MoveIngredient" />
+                                        <action id="-15" name="Set visible" sid="213963201051484" type="MoveIngredient">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
                                         <action id="-15" name="Set visible" sid="830652447852307" type="CutIngredients">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="826827824356643" type="Line" />
-                                        <action id="-9" name="Destroy" sid="578936937159824" type="TouchYES" />
+                                        <action id="-10" name="Set value" sid="693710216013437" type="MoveIngredient">
+                                            <param id="0" name="Instance variable">TouchID</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="189252843568153">
+                                            <conditions>
+                                                <condition id="-19" name="Pick all" sid="794209405352045" type="System">
+                                                    <param id="0" name="Object">TouchYES</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="578936937159824" type="TouchYES" />
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -320,9 +422,6 @@
                             <param id="0" name="First value">MoveIngredient.Count</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">0</param>
-                        </condition>
-                        <condition disabled="1" id="-8" inverted="1" name="Is boolean instance variable set" sid="407066841920035" type="CutIngredients">
-                            <param id="0" name="Instance variable">Bowled</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -361,11 +460,12 @@
                         <condition id="4" name="Is touching object" sid="180521621537202" type="Touch">
                             <param id="0" name="Object">CutIngredients</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="184400110208342" type="System">
+                        <condition disabled="1" id="-8" name="Compare two values" sid="184400110208342" type="System">
                             <param id="0" name="First value">MoveIngredient.Count</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">0</param>
                         </condition>
+                        <condition id="-9" inverted="1" name="Is visible" sid="483952676325990" type="MoveIngredient" />
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="831482038532079" type="CutIngredients">
                             <param id="0" name="Instance variable">Bowled</param>
                         </condition>
@@ -385,18 +485,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="559222720826154" type="Line" />
-                <action id="2" name="Set at X" sid="399147755715670" type="Array">
-                    <param id="0" name="X">0</param>
-                    <param id="1" name="Value">&quot;Salmon&quot;</param>
-                </action>
-                <action id="2" name="Set at X" sid="872961987152022" type="Array">
-                    <param id="0" name="X">1</param>
-                    <param id="1" name="Value">&quot;Tuna&quot;</param>
-                </action>
-                <action id="2" name="Set at X" sid="792820727816077" type="Array">
-                    <param id="0" name="X">1</param>
-                    <param id="1" name="Value">&quot;Eel&quot;</param>
-                </action>
             </actions>
         </event-block>
     </events>

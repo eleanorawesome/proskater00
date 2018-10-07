@@ -96,8 +96,8 @@
                     </animation>
                     <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="311945243120922" speed="5">
                         <frame duration="1" hotspotX="0.504043" hotspotY="0.536" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_daikon.png">
-                            <image-point name="Imagepoint 1" x="-0.0835579" y="-0.016" />
-                            <image-point name="Imagepoint 2" x="1.07278" y="1" />
+                            <image-point name="Imagepoint 1" x="1.10782" y="0.064" />
+                            <image-point name="Imagepoint 2" x="-0.0485175" y="0.632" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="458816918243758" speed="5">
@@ -108,8 +108,8 @@
                     </animation>
                     <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="450592356091975" speed="5">
                         <frame duration="1" hotspotX="0.501348" hotspotY="0.456" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_cucumber.png">
-                            <image-point name="Imagepoint 1" x="-0.169811" y="-0.496" />
-                            <image-point name="Imagepoint 2" x="0.84097" y="1.352" />
+                            <image-point name="Imagepoint 1" x="1.1159" y="0.176" />
+                            <image-point name="Imagepoint 2" x="-0.032345" y="0.648" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="328619143357898" speed="5">
@@ -566,7 +566,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="120037202713823" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_egg.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\whole_egg.png">
                             <collision-poly>
                                 <point x="0.266" y="0.266" />
                                 <point x="0.5" y="0.232" />
@@ -594,7 +594,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="771661850286850" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_daikon.png">
+                        <frame duration="1" hotspotX="0.50099" hotspotY="0.501618" original-source="C:\Users\elean\Downloads\whole_pickleddaikon.png">
                             <collision-poly>
                                 <point x="0.344" y="0.344" />
                                 <point x="0.5" y="0.418" />
@@ -608,7 +608,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="507509270018300" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_cucumber.png">
+                        <frame duration="1" hotspotX="0.50099" hotspotY="0.501618" original-source="C:\Users\elean\Downloads\whole_cucumber.png">
                             <collision-poly>
                                 <point x="0.316" y="0.316" />
                                 <point x="0.5" y="0.368" />
