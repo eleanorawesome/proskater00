@@ -5,6 +5,8 @@
     <events>
         <variable constant="0" name="MAIN_LatestID" sid="616412103633168" static="0" type="number">0</variable>
         <variable constant="0" name="MAIN_SelectedIngredient" sid="809627495335638" static="0" type="number">-1</variable>
+        <include>Jhayzle</include>
+        <include>Ramy</include>
         <include>Jennifer</include>
         <include>Eleanor</include>
         <event-group description="" sid="882532419829115" title="Grabbable">
