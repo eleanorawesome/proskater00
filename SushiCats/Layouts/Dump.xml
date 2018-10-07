@@ -38,6 +38,7 @@
                     </properties>
                     <instance-variables>
                         <ID>0</ID>
+                        <Plated>false</Plated>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -271,6 +272,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <SushiCount>0</SushiCount>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
