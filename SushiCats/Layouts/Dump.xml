@@ -131,8 +131,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <active>false</active>
-                        <id>0</id>
+                        <Ingredient></Ingredient>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

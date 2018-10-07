@@ -615,8 +615,7 @@
             <object-type name="Piece" sid="190531322475751">
                 <plugin id="Sprite" />
                 <instance-variables>
-                    <instance-variable name="active" sid="319351780859218" type="boolean" />
-                    <instance-variable name="id" sid="492213128300445" type="number" />
+                    <instance-variable name="Ingredient" sid="841570929427505" type="string" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804964645065668" speed="5">
