@@ -31,6 +31,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Assemble</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -99,7 +100,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Daikon" sid="337845181753639">
+            <object-type name="Eleanor03" sid="337845181753639">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770604324284949" speed="5">
@@ -118,7 +119,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Carrot" sid="870443871071263">
+            <object-type name="Eleanor04" sid="870443871071263">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570172775585662" speed="5">
@@ -344,6 +345,12 @@
             </object-type>
             <object-type name="06Sprite" sid="155037944624843">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="id" sid="147701482082003" type="number" />
+                    <instance-variable name="active" sid="419464333698775" type="boolean" />
+                    <instance-variable name="xOffset" sid="385430255523338" type="number" />
+                    <instance-variable name="yOffset" sid="611765627714413" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100535019394004" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.503401" />
@@ -512,7 +519,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Ingredient" sid="929346756992921">
+            <object-type name="Jhayzle08" sid="929346756992921">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="SushiID" sid="809348165888555" type="number" />
@@ -627,13 +634,13 @@
         <event-sheet>Ramy.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Function" uid="43" />
-        <global-instance type="Touch" uid="44">
+        <global-instance type="Function" uid="41" />
+        <global-instance type="Touch" uid="43">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="45">
+        <global-instance type="Audio" uid="44">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -647,7 +654,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="52" />
+        <global-instance type="Browser" uid="45" />
     </global-instances>
     <sounds-folder />
     <music-folder />
