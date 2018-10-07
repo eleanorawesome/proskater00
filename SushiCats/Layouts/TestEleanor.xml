@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Cucumber" uid="30">
+                <instance type="CutIngredients" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -42,11 +42,11 @@
                         <x>427</x>
                         <y>240.5</y>
                         <z>0</z>
-                        <width>424</width>
-                        <height>351</height>
+                        <width>482</width>
+                        <height>635</height>
                         <depth>0</depth>
-                        <hotspotX>0.561320782</hotspotX>
-                        <hotspotY>0.433048427</hotspotY>
+                        <hotspotX>0.539419115</hotspotX>
+                        <hotspotY>0.40157479</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

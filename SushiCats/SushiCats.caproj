@@ -75,21 +75,35 @@
             </object-type>
         </object-folder>
         <object-folder name="Eleanor">
-            <object-type name="Cucumber" sid="321384601275481">
+            <object-type name="CutIngredients" sid="321384601275481">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="862999971021369" speed="5">
-                        <frame duration="1" hotspotX="0.561321" hotspotY="0.433048" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_cucumber.png">
-                            <collision-poly>
-                                <point x="0.34434" y="0.153846" />
-                                <point x="0.561321" y="0.22792" />
-                                <point x="0.639151" y="0.321937" />
-                                <point x="0.669811" y="0.415954" />
-                                <point x="0.950472" y="0.88604" />
-                                <point x="0.330189" y="0.695157" />
-                                <point x="0.00471698" y="0.415954" />
-                            </collision-poly>
-                        </frame>
+                    <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="862999971021369" speed="5">
+                        <frame duration="1" hotspotX="0.539419" hotspotY="0.401575" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_avacado.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="719276887789160" speed="5">
+                        <frame duration="1" hotspotX="0.504043" hotspotY="0.48" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_carrots.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="311945243120922" speed="5">
+                        <frame duration="1" hotspotX="0.504043" hotspotY="0.536" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_daikon.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="458816918243758" speed="5">
+                        <frame duration="1" hotspotX="0.516517" hotspotY="0.511976" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_eel.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="450592356091975" speed="5">
+                        <frame duration="1" hotspotX="0.501348" hotspotY="0.456" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_cucumber.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="328619143357898" speed="5">
+                        <frame duration="1" hotspotX="0.535893" hotspotY="0.629545" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_tuna.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="363608775960229" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502075" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_egg.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="648322180837057" speed="5">
+                        <frame duration="1" hotspotX="0.367742" hotspotY="0.567742" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_shrimp.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="153649157276889" speed="5">
+                        <frame duration="1" hotspotX="0.513021" hotspotY="0.445513" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_salmon.png" />
                     </animation>
                 </animation-folder>
             </object-type>
