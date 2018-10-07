@@ -3,8 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Ramy</name>
     <events>
+        <variable constant="0" name="ASSEMBLY_BambooUID" sid="202872561806669" static="0" type="number">0</variable>
+        <variable constant="0" name="ASSEMBLY_RollCount" sid="258560832644493" static="0" type="number">0</variable>
+        <variable constant="0" name="ASSEMBLY_LockRolling" sid="437481226294380" static="0" type="number">0</variable>
+        <variable constant="0" name="ASSEMBLY_RollRightTouched" sid="680953109905757" static="0" type="number">0</variable>
+        <variable comment="Was the roll left" constant="0" name="ASSEMBLY_RollLeftTouched" sid="686534876857325" static="0" type="number">0</variable>
         <variable comment="Number of Noris in play" constant="0" name="ASSEMBLY_NoriCount" sid="605375570296983" static="0" type="number">0</variable>
-        <variable comment="Number of rices generated, doubles as id assignment" constant="0" name="ASSEMBLY_RiceCount" sid="200648545277779" static="0" type="number">0</variable>
         <variable comment="The possible range away from the touch" constant="1" name="ASSEMBLY_GENERATEDRICERANGEVARIATION" sid="191901076355037" static="0" type="number">20</variable>
         <variable comment="Minimum amount of possible rice paddies to grab" constant="1" name="ASSEMBLY_MAXIMUMRICETOMAKE" sid="804547825439294" static="0" type="number">6</variable>
         <variable comment="Maximum amount of possible rice paddies to grab" constant="1" name="ASSEMBLY_MINIMUMRICETOMAKE" sid="722497443357027" static="0" type="number">2</variable>
@@ -14,7 +18,7 @@
                 <event-block sid="940826948663111">
                     <conditions>
                         <condition id="3" name="On touched object" sid="928462623618625" type="Touch">
-                            <param id="0" name="Object">05Sprite</param>
+                            <param id="0" name="Object">Rice</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -66,10 +70,6 @@
                                 </action>
                                 <action id="-8" name="Set angle" sid="525666703329875" type="Piece">
                                     <param id="0" name="Angle">random(0.0, 360.0)</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="569554333994523" type="System">
-                                    <param id="0" name="Variable">ASSEMBLY_RiceCount</param>
-                                    <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="162635120814791" type="System">
                                     <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
@@ -136,12 +136,12 @@
                             <param id="2" name="Value">&quot;Nori&quot;</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="938207044304794" type="Piece">
-                            <param id="0" name="Object">RamySprite00</param>
+                            <param id="0" name="Object">SushiMat</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-4" name="Set position to another object" sid="552993648593624" type="Piece">
-                            <param id="0" name="Object">RamySprite00</param>
+                            <param id="0" name="Object">SushiMat</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
                         <action id="-26" name="Move to layer" sid="640935762730798" type="Piece">
@@ -174,7 +174,7 @@
                             <param id="0" name="Layer">1</param>
                         </condition>
                         <condition id="1" inverted="1" name="Is overlapping another object" sid="367626797128799" type="Piece">
-                            <param id="0" name="Object">RamySprite00</param>
+                            <param id="0" name="Object">SushiMat</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -296,6 +296,183 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="809476487721776" type="System">
                             <param id="0" name="Layout">Plating</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="629965671885115" title="Rolling">
+            <sub-events>
+                <event-block sid="319759975191886">
+                    <conditions>
+                        <condition id="10" name="On Nth touch start" sid="221493686298488" type="Touch">
+                            <param id="0" name="Touch number">0</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="577277810507031" type="Touch">
+                            <param id="0" name="Object">RamySprite07</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="118595431431651" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="647014688568236">
+                    <conditions>
+                        <condition id="10" name="On Nth touch start" sid="748393154514813" type="Touch">
+                            <param id="0" name="Touch number">1</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="686619871160935" type="Touch">
+                            <param id="0" name="Object">RamySprite07</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="333924721967535" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="124467301883500">
+                    <conditions>
+                        <condition id="13" name="On hold" sid="376698277563408" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="122594101688143" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="321571404791838" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="636907598842609" type="Touch">
+                            <param id="0" name="Object">RamySprite07</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="430910810066368" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="370047065998790">
+                    <conditions>
+                        <condition id="13" name="On hold" sid="463905171787402" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="824717032348727" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="461368258049771" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="176950086304767" type="Touch">
+                            <param id="0" name="Object">RamySprite07</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="640010482468744" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="555446957609567">
+                    <conditions>
+                        <condition id="13" name="On hold" sid="803760884624517" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="724701624356494" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="433870588012133" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="709827877510747" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="702602519510464" type="Touch">
+                            <param id="0" name="Object">RamySprite07</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="414320863135948" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="665111982816325" type="System">
+                            <param id="0" name="Object to create">SushiMat</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">400</param>
+                            <param id="3" name="Y">400</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="406952514725696" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_BambooUID</param>
+                            <param id="1" name="Value">SushiMat.UID</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="898412920780795" type="SushiMat">
+                            <param id="0" name="Height">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="102125768446986">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="425568312773282" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="775150961970531" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="405537284328445" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="632730936006253" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="301288299877909" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="729793595084578">
+                    <conditions>
+                        <condition id="12" name="Has Nth touch" sid="963512254016397" type="Touch">
+                            <param id="0" name="Touch number">0</param>
+                        </condition>
+                        <condition id="12" name="Has Nth touch" sid="923694700485843" type="Touch">
+                            <param id="0" name="Touch number">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="893333777951361" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="228207014207038" type="SushiMat">
+                            <param id="0" name="Unique ID">ASSEMBLY_BambooUID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="203385779820951" type="System">
+                            <param id="0" name="Variable">ASSEMBLY_RollCount</param>
+                            <param id="1" name="Value">250*0.01*dt</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="121097840062987" type="SushiMat">
+                            <param id="0" name="Height">ASSEMBLY_RollCount</param>
                         </action>
                     </actions>
                 </event-block>

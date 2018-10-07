@@ -76,11 +76,11 @@
                         <x>402</x>
                         <y>78</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>238</width>
+                        <height>219</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.521008432</hotspotX>
+                        <hotspotY>0.502283096</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -160,7 +160,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="05Sprite" uid="12">
+                <instance type="Rice" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -173,10 +173,10 @@
                         <x>756</x>
                         <y>161</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>409</width>
+                        <height>392</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.501222491</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -271,7 +271,7 @@
                         <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.432000011</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
