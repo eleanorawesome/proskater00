@@ -448,9 +448,6 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566417125647638" speed="5">
                         <frame duration="1" hotspotX="0.44" hotspotY="0.54">
-                            <image-point name="Ingredient 1" x="0.44" y="0.38" />
-                            <image-point name="Ingredient 2" x="0.28" y="0.66" />
-                            <image-point name="Ingredient 3" x="0.56" y="0.66" />
                             <collision-poly>
                                 <point x="0.00400001" y="0.992095" />
                                 <point x="0.00400001" y="0.00790501" />
@@ -522,7 +519,14 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457455369377926" speed="5">
-                        <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.692308" original-source="C:\Users\jhaya\Pictures\Sushi Cats\transparent-third.png">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
