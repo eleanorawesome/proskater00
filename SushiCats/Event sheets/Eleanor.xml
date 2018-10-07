@@ -142,15 +142,21 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="836056625988712" type="MoveIngredient" />
+                                                <action id="0" name="Play" sid="287453085316999" type="Audio">
+                                                    <param id="0" name="Audio file">plating_plop1</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="530490747082228">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="109428002458930" type="System" />
                                                 <condition id="1" name="Is overlapping another object" sid="722628979791556" type="MoveIngredient">
-                                                    <param id="0" name="Object">zone01</param>
+                                                    <param id="0" name="Object">CuttingBoardMArker</param>
                                                 </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="398838495123623" type="zone01">
+                                                <condition id="-7" name="Compare instance variable" sid="398838495123623" type="CuttingBoardMArker">
                                                     <param id="0" name="Instance variable">ZoneName</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">&quot;CuttingBoard&quot;</param>
