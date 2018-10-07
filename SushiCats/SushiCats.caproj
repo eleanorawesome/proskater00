@@ -980,19 +980,47 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="RamySprite03" sid="682645519919635">
+            <object-type name="Cat2" sid="682645519919635">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="654368326445699" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="605584627925170" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.587021" hotspotY="0.192248" original-source="E:\thecatsmeow\betty_body.png">
+                            <collision-poly>
+                                <point x="0.212389" y="0.111628" />
+                                <point x="0.498525" y="0.15969" />
+                                <point x="0.678466" y="0.168992" />
+                                <point x="0.79351" y="0.499225" />
+                                <point x="0.710914" y="0.848062" />
+                                <point x="0.498525" y="0.924031" />
+                                <point x="0.368732" y="0.806202" />
+                                <point x="0.348083" y="0.499225" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="RamySprite04" sid="635954910775199">
+            <object-type name="Cat3" sid="635954910775199">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="930367326466307" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494862889851086" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.518817" hotspotY="0.191781" original-source="E:\thecatsmeow\Steve_body.png">
+                            <collision-poly>
+                                <point x="0.193548" y="0.109589" />
+                                <point x="0.5" y="0.147641" />
+                                <point x="0.819892" y="0.101979" />
+                                <point x="0.674731" y="0.499239" />
+                                <point x="0.650538" y="0.802131" />
+                                <point x="0.5" y="0.902588" />
+                                <point x="0.33871" y="0.808219" />
+                                <point x="0.379032" y="0.499239" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1028,11 +1056,25 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Cat" sid="671191220864507">
+            <object-type name="Cat1" sid="671191220864507">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="538716147934430" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131823499417529" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.509971" hotspotY="0.208909" original-source="E:\thecatsmeow\ashe_body.png">
+                            <collision-poly>
+                                <point x="0.246201" y="0.166969" />
+                                <point x="0.510638" y="0.0871143" />
+                                <point x="0.975684" y="0.0471869" />
+                                <point x="0.808511" y="0.497278" />
+                                <point x="0.759878" y="0.818512" />
+                                <point x="0.510638" y="0.976407" />
+                                <point x="0.288754" y="0.802178" />
+                                <point x="0.0334347" y="0.497278" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1346,11 +1388,14 @@
             <object-type global="1" name="Jhayzleimage04" sid="984093922836304">
                 <plugin id="Arr" />
             </object-type>
-            <object-type name="Jhayzleimage05" sid="539157861120742">
+            <object-type name="Hearts" sid="539157861120742">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586708660222874" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586708660222874" speed="10">
+                        <frame duration="1" hotspotX="0.501961" hotspotY="0.5" original-source="E:\heartframes\heartsframe_1.png" />
+                        <frame duration="1" hotspotX="0.501961" hotspotY="0.5" original-source="E:\heartframes\heartsframe_1.png" />
+                        <frame duration="1" hotspotX="0.501961" hotspotY="0.5" original-source="E:\heartframes\heartsframe_2.png" />
+                        <frame duration="1" hotspotX="0.501961" hotspotY="0.5" original-source="E:\heartframes\heartsframe_4.png" />
                     </animation>
                 </animation-folder>
             </object-type>

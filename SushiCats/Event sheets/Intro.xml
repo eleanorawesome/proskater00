@@ -3,10 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Intro</name>
     <events>
-        <event-block sid="178617067652200">
+        <variable constant="0" name="SelectedCat" sid="758007432867553" static="0" type="number">0</variable>
+        <event-block any="1" sid="178617067652200">
             <conditions>
                 <condition id="17" name="On tap object" sid="413965987639069" type="Touch">
-                    <param id="0" name="Object">Cat</param>
+                    <param id="0" name="Object">Cat1</param>
                 </condition>
             </conditions>
             <actions>
@@ -16,7 +17,129 @@
                 <action id="-2" name="Go to layout" sid="199882636717795" type="System">
                     <param id="0" name="Layout">Prep</param>
                 </action>
+                <action id="-9" name="Set value" sid="540453594262693" type="System">
+                    <param id="0" name="Variable">SelectedCat</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
+        </event-block>
+        <event-block any="1" sid="831976367103274">
+            <conditions>
+                <condition id="17" name="On tap object" sid="326098985006786" type="Touch">
+                    <param id="0" name="Object">Cat2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="520467462391669" type="Browser">
+                    <param id="0" name="Mode">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="743194875446211" type="System">
+                    <param id="0" name="Layout">Prep</param>
+                </action>
+                <action id="-9" name="Set value" sid="533938564255850" type="System">
+                    <param id="0" name="Variable">SelectedCat</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="448493734875578">
+            <conditions>
+                <condition id="17" name="On tap object" sid="161885093540273" type="Touch">
+                    <param id="0" name="Object">Cat3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="668083382393051" type="Browser">
+                    <param id="0" name="Mode">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="562317901850905" type="System">
+                    <param id="0" name="Layout">Prep</param>
+                </action>
+                <action id="-9" name="Set value" sid="805591334819064" type="System">
+                    <param id="0" name="Variable">SelectedCat</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="367425713142510">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="339915007213919" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="311940643426977">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="583582869807765" type="System">
+                            <param id="0" name="Variable">SelectedCat</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="723090036296772" type="Cat1">
+                            <param id="0" name="Object">Hearts</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="814313206576144">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="728713834616863" type="System">
+                            <param id="0" name="Variable">SelectedCat</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="873364286774319" type="Cat2">
+                            <param id="0" name="Object">Hearts</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="619784129289200">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="622627966035115" type="System">
+                            <param id="0" name="Variable">SelectedCat</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="296756770702043" type="Cat3">
+                            <param id="0" name="Object">Hearts</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="813424433569550">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="660085832300179" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Intro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Clear" sid="487741363637339" type="Array" />
+                        <action id="-9" name="Set value" sid="466942762502729" type="System">
+                            <param id="0" name="Variable">SushiPlated</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="570635082886140" type="System">
+                            <param id="0" name="Variable">CurrentPlateCheck</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="243850756742293" type="System">
+                            <param id="0" name="Variable">Dinged</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
