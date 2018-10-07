@@ -77,11 +77,14 @@
         <object-folder name="Eleanor">
             <object-type name="CutIngredients" sid="321384601275481">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="748984958240154" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="862999971021369" speed="5">
                         <frame duration="1" hotspotX="0.539419" hotspotY="0.401575" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_avacado.png">
                             <image-point name="Imagepoint 1" x="0.636929" y="-0.096063" />
-                            <image-point name="Imagepoint 2" x="0.1639" y="1.13386" />
+                            <image-point name="Imagepoint 2" x="0.400415" y="0.966929" />
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="719276887789160" speed="5">
@@ -164,8 +167,11 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Carrot" sid="870443871071263">
+            <object-type name="Bowls" sid="870443871071263">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="BowlID" sid="206736012215971" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570172775585662" speed="5">
                         <frame duration="1" hotspotX="0.512894" hotspotY="0.516509" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_carrot.png">
@@ -459,7 +465,7 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="968570658984226" speed="5">
-                        <frame duration="1" hotspotX="0.6" hotspotY="0.6" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.4" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -526,6 +532,8 @@
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="TouchID" sid="589959251841406" type="number" />
+                    <instance-variable name="Set" sid="812225446299601" type="boolean" />
+                    <instance-variable name="TouchYes" sid="591878720395750" type="number" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="573862093752200" speed="5">

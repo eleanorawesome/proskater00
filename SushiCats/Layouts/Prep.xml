@@ -49,8 +49,8 @@
                         <width>5</width>
                         <height>5</height>
                         <depth>0</depth>
-                        <hotspotX>0.600000024</hotspotX>
-                        <hotspotY>0.600000024</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.400000006</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -318,14 +318,89 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>435.020385742</x>
+                        <x>340.061218262</x>
                         <y>455</y>
                         <z>0</z>
-                        <width>862</width>
+                        <width>674</width>
                         <height>61</height>
                         <depth>0</depth>
                         <hotspotX>0.505102038</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bowls" uid="60">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BowlID>0</BowlID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>797</x>
+                        <y>187</y>
+                        <z>0</z>
+                        <width>92.74445343</width>
+                        <height>112.675201416</height>
+                        <depth>0</depth>
+                        <hotspotX>0.512893975</hotspotX>
+                        <hotspotY>0.516509414</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bowls" uid="69">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BowlID>1</BowlID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>796</x>
+                        <y>306</y>
+                        <z>0</z>
+                        <width>98.740951538</width>
+                        <height>119.960350037</height>
+                        <depth>0</depth>
+                        <hotspotX>0.512893975</hotspotX>
+                        <hotspotY>0.516509414</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bowls" uid="70">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BowlID>2</BowlID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>794</x>
+                        <y>421</y>
+                        <z>0</z>
+                        <width>97.186546326</width>
+                        <height>118.071899414</height>
+                        <depth>0</depth>
+                        <hotspotX>0.512893975</hotspotX>
+                        <hotspotY>0.516509414</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
