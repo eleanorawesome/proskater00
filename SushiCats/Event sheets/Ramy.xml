@@ -39,27 +39,32 @@
                             </conditions>
                             <actions>
                                 <action id="-3" name="Create object" sid="729266756205930" type="System">
-                                    <param id="0" name="Object to create">06Sprite</param>
+                                    <param id="0" name="Object to create">Piece</param>
                                     <param id="1" name="Layer">1</param>
                                     <param id="2" name="X">Touch.X+random(-ASSEMBLY_GENERATEDRICERANGEVARIATION, ASSEMBLY_GENERATEDRICERANGEVARIATION)</param>
                                     <param id="3" name="Y">Touch.Y+random(-ASSEMBLY_GENERATEDRICERANGEVARIATION, ASSEMBLY_GENERATEDRICERANGEVARIATION)</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="849101131339936" type="06Sprite">
-                                    <param id="0" name="Instance variable">id</param>
-                                    <param id="1" name="Value">ASSEMBLY_RiceCount</param>
+                                <action id="-10" name="Set value" sid="725322521107554" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Value">&quot;Rice&quot;</param>
                                 </action>
-                                <action id="-14" name="Toggle boolean" sid="651778248837897" type="06Sprite">
+                                <action id="4" name="Set animation" sid="591856220757377" type="Piece">
+                                    <param id="0" name="Animation">&quot;Rice&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="651778248837897" type="Piece">
                                     <param id="0" name="Instance variable">active</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="269146276109191" type="06Sprite">
+                                <action id="-10" name="Set value" sid="269146276109191" type="Piece">
                                     <param id="0" name="Instance variable">xOffset</param>
                                     <param id="1" name="Value">Touch.X - Self.X</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="438978534810530" type="06Sprite">
+                                <action id="-10" name="Set value" sid="438978534810530" type="Piece">
                                     <param id="0" name="Instance variable">yOffset</param>
                                     <param id="1" name="Value">Touch.Y - Self.Y</param>
                                 </action>
-                                <action id="-8" name="Set angle" sid="525666703329875" type="06Sprite">
+                                <action id="-8" name="Set angle" sid="525666703329875" type="Piece">
                                     <param id="0" name="Angle">random(0.0, 360.0)</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="569554333994523" type="System">
@@ -74,7 +79,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="780207124410787">
+                <event-block disabled="1" sid="780207124410787">
                     <conditions>
                         <condition id="3" name="On touched object" sid="924449366467472" type="Touch">
                             <param id="0" name="Object">06Sprite</param>
@@ -102,24 +107,34 @@
                 <event-block sid="989731265749115">
                     <conditions>
                         <condition id="1" name="On any touch end" sid="261859294765729" type="Touch" />
-                        <condition id="-8" name="Is boolean instance variable set" sid="870573437268540" type="06Sprite">
+                        <condition id="-7" name="Compare instance variable" sid="697144883993230" type="Piece">
+                            <param id="0" name="Instance variable">Ingredient</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Rice&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="870573437268540" type="Piece">
                             <param id="0" name="Instance variable">active</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-14" name="Toggle boolean" sid="822481407786736" type="06Sprite">
+                        <action id="-14" name="Toggle boolean" sid="822481407786736" type="Piece">
                             <param id="0" name="Instance variable">active</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="438830539994752">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="974143179164648" type="06Sprite">
+                        <condition id="-8" name="Is boolean instance variable set" sid="974143179164648" type="Piece">
                             <param id="0" name="Instance variable">active</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="233144652887428" type="Piece">
+                            <param id="0" name="Instance variable">Ingredient</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Rice&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="498041913264342" type="06Sprite">
+                        <action id="-3" name="Set position" sid="498041913264342" type="Piece">
                             <param id="0" name="X">Touch.X + Self.xOffset</param>
                             <param id="1" name="Y">Touch.Y + Self.yOffset</param>
                         </action>
@@ -218,6 +233,79 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="649285589580448" type="Piece" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="199491863259563" title="SetIngredients">
+            <sub-events>
+                <event-block sid="720880421502791">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="574458689166343" type="System" />
+                        <condition id="-14" name="Pick by unique ID" sid="735825190758317" type="Container">
+                            <param id="0" name="Unique ID">1</param>
+                        </condition>
+                        <condition id="0" name="Compare at X" sid="124857024192647" type="Array">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="352433463905669" type="Container">
+                            <param id="0" name="Instance variable">Ingredient</param>
+                            <param id="1" name="Value">Array.At(0)</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="397743114056487" type="Container">
+                            <param id="0" name="Animation">Array.At(0)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="741785357975246">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="871009062377583" type="System" />
+                        <condition id="-14" name="Pick by unique ID" sid="892942513471897" type="Container">
+                            <param id="0" name="Unique ID">2</param>
+                        </condition>
+                        <condition id="0" name="Compare at X" sid="592480601038412" type="Array">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="623633309810685" type="Container">
+                            <param id="0" name="Instance variable">Ingredient</param>
+                            <param id="1" name="Value">Array.At(1)</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="879377040236377" type="Container">
+                            <param id="0" name="Animation">Array.At(1)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="205706374325153">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="997524462028534" type="System" />
+                        <condition id="-14" name="Pick by unique ID" sid="472497052469307" type="Container">
+                            <param id="0" name="Unique ID">3</param>
+                        </condition>
+                        <condition id="0" name="Compare at X" sid="311139370625928" type="Array">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="154063218579442" type="Container">
+                            <param id="0" name="Instance variable">Ingredient</param>
+                            <param id="1" name="Value">Array.At(2)</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="248196567029863" type="Container">
+                            <param id="0" name="Animation">Array.At(2)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

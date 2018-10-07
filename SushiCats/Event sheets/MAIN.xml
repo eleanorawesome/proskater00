@@ -71,12 +71,23 @@
                             <param id="0" name="Variable">MAIN_SelectedIngredient</param>
                             <param id="1" name="Value">Piece.UID</param>
                         </action>
+                        <action id="-10" name="Set value" sid="121345368621817" type="Piece">
+                            <param id="0" name="Instance variable">xOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="422317076033971" type="Piece">
+                            <param id="0" name="Instance variable">yOffset</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="222559681733200">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="723496135842593" type="Piece">
                             <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="226292335039646" type="Piece">
+                            <param id="0" name="Instance variable">active</param>
                         </condition>
                     </conditions>
                     <actions>

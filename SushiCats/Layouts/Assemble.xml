@@ -83,8 +83,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>98</x>
-                        <y>404</y>
+                        <x>100</x>
+                        <y>400</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -130,8 +130,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>97</x>
-                        <y>290</y>
+                        <x>100</x>
+                        <y>260</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -150,13 +150,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Ingredient>Wasabi</Ingredient>
+                        <Ingredient>Nori</Ingredient>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>98</x>
-                        <y>180</y>
+                        <x>658</x>
+                        <y>60</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -175,13 +175,13 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Ingredient>Nori</Ingredient>
+                        <Ingredient>Wasabi</Ingredient>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>563</x>
-                        <y>61</y>
+                        <x>100</x>
+                        <y>120</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -205,11 +205,11 @@
                         <x>448</x>
                         <y>471</y>
                         <z>0</z>
-                        <width>92.833183289</width>
-                        <height>92.833183289</height>
+                        <width>37.50460434</width>
+                        <height>32.677280426</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.584158421</hotspotX>
+                        <hotspotY>0.488636374</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
