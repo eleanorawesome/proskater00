@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Jhayzle</name>
     <events>
+        <variable constant="0" name="SushiPosX" sid="910313900341233" static="0" type="number">100</variable>
+        <variable constant="0" name="SushiPosY" sid="851847582792525" static="0" type="number">375</variable>
         <variable constant="0" name="CurrentRollID" sid="375986226917732" static="0" type="number">0</variable>
         <variable constant="0" name="SelectedRoll" sid="502564142874221" static="0" type="number">-1</variable>
         <event-block sid="431048043685822">
@@ -18,8 +20,8 @@
                 <action id="-3" name="Create object" sid="303291177148924" type="System">
                     <param id="0" name="Object to create">CutRoll</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">100</param>
-                    <param id="3" name="Y">375</param>
+                    <param id="2" name="X">SushiPosX + 50 * loopindex</param>
+                    <param id="3" name="Y">SushiPosY</param>
                 </action>
                 <action id="-10" name="Set value" sid="408083649448080" type="CutRoll">
                     <param id="0" name="Instance variable">ID</param>
@@ -48,11 +50,14 @@
                         </action>
                         <action id="-4" name="Set position to another object" sid="517002585559557" type="Ingredient">
                             <param id="0" name="Object">CutRoll</param>
-                            <param id="1" name="Image point (optional)">loopindex</param>
+                            <param id="1" name="Image point (optional)">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="889140602165200" type="Ingredient">
                             <param id="0" name="Instance variable">SushiID</param>
                             <param id="1" name="Value">CurrentRollID</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="893362331848699" type="Ingredient">
+                            <param id="0" name="Angle">120*(loopindex-1)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -201,7 +206,7 @@
                     <actions>
                         <action id="-4" name="Set position to another object" sid="314389217835695" type="Ingredient">
                             <param id="0" name="Object">CutRoll</param>
-                            <param id="1" name="Image point (optional)">1</param>
+                            <param id="1" name="Image point (optional)">0</param>
                         </action>
                     </actions>
                 </event-block>
