@@ -297,6 +297,18 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="559222720826154" type="Line" />
+                <action id="2" name="Set at X" sid="399147755715670" type="Array">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">&quot;Salmon&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="872961987152022" type="Array">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">&quot;Tuna&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="792820727816077" type="Array">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">&quot;Eel&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
