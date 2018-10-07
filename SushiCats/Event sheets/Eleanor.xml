@@ -114,7 +114,7 @@
                                     <param id="0" name="Instance variable">TouchID</param>
                                     <param id="1" name="Value">Touch.TouchID</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="185089486760841" type="Line">
+                                <action disabled="1" id="-13" name="Set boolean" sid="185089486760841" type="Line">
                                     <param id="0" name="Instance variable">Start</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
@@ -131,6 +131,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Call function" sid="589530236646245" type="Function">
+                                    <param id="0" name="Name">&quot;DrawLine&quot;</param>
+                                    <param id="1" name="Parameter {n}">Touch.XForID(Line.TouchID){###}Touch.YForID(Line.TouchID)</param>
+                                </action>
                                 <action id="-13" name="Set boolean" sid="851147873125760" type="Line">
                                     <param id="0" name="Instance variable">Start</param>
                                     <param id="1" name="Value">1</param>
@@ -143,10 +147,6 @@
                                 <action id="-22" name="Set angle toward position" sid="498444263567899" type="Line">
                                     <param id="0" name="X">Touch.XForID(Line.TouchID)</param>
                                     <param id="1" name="Y">Touch.YForID(Line.TouchID)</param>
-                                </action>
-                                <action id="0" name="Call function" sid="589530236646245" type="Function">
-                                    <param id="0" name="Name">&quot;DrawLine&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
