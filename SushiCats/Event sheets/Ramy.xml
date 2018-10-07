@@ -3,480 +3,646 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Ramy</name>
     <events>
+        <variable constant="1" name="ASSEMBLY_PROBABILITYPLAYINGROLLSOUND" sid="864089728626075" static="0" type="number">95</variable>
+        <variable constant="1" name="ASSEMBLY_MAXIMUMROLLCOUNT" sid="704755141229313" static="0" type="number">5</variable>
+        <variable constant="1" name="ASSEMBLY_ROLLCOUNTTARGET" sid="432910125529938" static="0" type="number">100</variable>
+        <variable constant="1" name="ASSEMBLY_ROLL_YOFFSET_MULTIPLIER" sid="885130447864548" static="0" type="number">0.01</variable>
+        <variable constant="1" name="ASSEMBLY_ROLL_HEIGHT_MULTIPLIER" sid="953885983764714" static="0" type="number">100</variable>
+        <variable constant="1" name="ASSEMBLY_MINIMUMROLLVELOCITY" sid="695910743945421" static="0" type="number">10</variable>
+        <variable comment="The possible range away from the touch" constant="1" name="ASSEMBLY_GENERATEDRICERANGEVARIATION" sid="191901076355037" static="0" type="number">20</variable>
+        <variable comment="Minimum amount of possible rice paddies to grab" constant="1" name="ASSEMBLY_MAXIMUMRICETOMAKE" sid="804547825439294" static="0" type="number">6</variable>
+        <variable comment="Maximum amount of possible rice paddies to grab" constant="1" name="ASSEMBLY_MINIMUMRICETOMAKE" sid="722497443357027" static="0" type="number">2</variable>
+        <variable constant="0" name="ASSEMBLY_Nori_UID" sid="860971068210537" static="0" type="number">-1</variable>
         <variable constant="0" name="ASSEMBLY_BambooUID" sid="202872561806669" static="0" type="number">0</variable>
         <variable constant="0" name="ASSEMBLY_RollCount" sid="258560832644493" static="0" type="number">0</variable>
         <variable constant="0" name="ASSEMBLY_LockRolling" sid="437481226294380" static="0" type="number">0</variable>
         <variable constant="0" name="ASSEMBLY_RollRightTouched" sid="680953109905757" static="0" type="number">0</variable>
         <variable comment="Was the roll left" constant="0" name="ASSEMBLY_RollLeftTouched" sid="686534876857325" static="0" type="number">0</variable>
         <variable comment="Number of Noris in play" constant="0" name="ASSEMBLY_NoriCount" sid="605375570296983" static="0" type="number">0</variable>
-        <variable comment="The possible range away from the touch" constant="1" name="ASSEMBLY_GENERATEDRICERANGEVARIATION" sid="191901076355037" static="0" type="number">20</variable>
-        <variable comment="Minimum amount of possible rice paddies to grab" constant="1" name="ASSEMBLY_MAXIMUMRICETOMAKE" sid="804547825439294" static="0" type="number">6</variable>
-        <variable comment="Maximum amount of possible rice paddies to grab" constant="1" name="ASSEMBLY_MINIMUMRICETOMAKE" sid="722497443357027" static="0" type="number">2</variable>
         <variable comment="A value to decide how many rices to make" constant="0" name="ASSEMBLY_GenerateRice" sid="770726914953690" static="0" type="number">0</variable>
-        <event-group description="" sid="941408405249223" title="Rice">
+        <event-block sid="578331889974827">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="968170525199506" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Assemble&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
             <sub-events>
-                <event-block sid="940826948663111">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="928462623618625" type="Touch">
-                            <param id="0" name="Object">Rice</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="113694476460065" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
-                            <param id="1" name="Value">random(ASSEMBLY_MINIMUMRICETOMAKE, ASSEMBLY_MAXIMUMRICETOMAKE)</param>
-                        </action>
-                    </actions>
+                <event-group description="" sid="199491863259563" title="SetIngredients">
                     <sub-events>
-                        <event-block sid="145933001589471">
+                        <event-block sid="720880421502791">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="156386794730187" type="System">
-                                    <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
+                                <condition id="-2" name="On start of layout" sid="574458689166343" type="System" />
+                                <condition id="-14" name="Pick by unique ID" sid="735825190758317" type="Container">
+                                    <param id="0" name="Unique ID">1</param>
                                 </condition>
-                                <condition id="-10" name="For" sid="130846899348830" type="System">
-                                    <param id="0" name="Name">&quot;MakeRice&quot;</param>
-                                    <param id="1" name="Start index">0</param>
-                                    <param id="2" name="End index">Assembly_GenerateRice</param>
+                                <condition id="0" name="Compare at X" sid="124857024192647" type="Array">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Create object" sid="729266756205930" type="System">
-                                    <param id="0" name="Object to create">Piece</param>
-                                    <param id="1" name="Layer">1</param>
-                                    <param id="2" name="X">Touch.X+random(-ASSEMBLY_GENERATEDRICERANGEVARIATION, ASSEMBLY_GENERATEDRICERANGEVARIATION)</param>
-                                    <param id="3" name="Y">Touch.Y+random(-ASSEMBLY_GENERATEDRICERANGEVARIATION, ASSEMBLY_GENERATEDRICERANGEVARIATION)</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="725322521107554" type="Piece">
+                                <action id="-10" name="Set value" sid="352433463905669" type="Container">
                                     <param id="0" name="Instance variable">Ingredient</param>
-                                    <param id="1" name="Value">&quot;Rice&quot;</param>
+                                    <param id="1" name="Value">Array.At(0)</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="591856220757377" type="Piece">
-                                    <param id="0" name="Animation">&quot;Rice&quot;</param>
+                                <action id="4" name="Set animation" sid="397743114056487" type="Container">
+                                    <param id="0" name="Animation">Array.At(0)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="651778248837897" type="Piece">
-                                    <param id="0" name="Instance variable">active</param>
-                                    <param id="1" name="Value">1</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="741785357975246">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="871009062377583" type="System" />
+                                <condition id="-14" name="Pick by unique ID" sid="892942513471897" type="Container">
+                                    <param id="0" name="Unique ID">2</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="592480601038412" type="Array">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="623633309810685" type="Container">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Value">Array.At(1)</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="269146276109191" type="Piece">
-                                    <param id="0" name="Instance variable">xOffset</param>
-                                    <param id="1" name="Value">Touch.X - Self.X</param>
+                                <action id="4" name="Set animation" sid="879377040236377" type="Container">
+                                    <param id="0" name="Animation">Array.At(1)</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="438978534810530" type="Piece">
-                                    <param id="0" name="Instance variable">yOffset</param>
-                                    <param id="1" name="Value">Touch.Y - Self.Y</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="205706374325153">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="997524462028534" type="System" />
+                                <condition id="-14" name="Pick by unique ID" sid="472497052469307" type="Container">
+                                    <param id="0" name="Unique ID">3</param>
+                                </condition>
+                                <condition id="0" name="Compare at X" sid="311139370625928" type="Array">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="154063218579442" type="Container">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Value">Array.At(2)</param>
                                 </action>
-                                <action id="-8" name="Set angle" sid="525666703329875" type="Piece">
-                                    <param id="0" name="Angle">random(0.0, 360.0)</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="162635120814791" type="System">
-                                    <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
-                                    <param id="1" name="Value">0</param>
+                                <action id="4" name="Set animation" sid="248196567029863" type="Container">
+                                    <param id="0" name="Animation">Array.At(2)</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="989731265749115">
-                    <conditions>
-                        <condition id="1" name="On any touch end" sid="261859294765729" type="Touch" />
-                        <condition id="-7" name="Compare instance variable" sid="697144883993230" type="Piece">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;Rice&quot;</param>
-                        </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="870573437268540" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Toggle boolean" sid="822481407786736" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="438830539994752">
-                    <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="974143179164648" type="Piece">
-                            <param id="0" name="Instance variable">active</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="233144652887428" type="Piece">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;Rice&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="498041913264342" type="Piece">
-                            <param id="0" name="X">Touch.X + Self.xOffset</param>
-                            <param id="1" name="Y">Touch.Y + Self.yOffset</param>
-                        </action>
-                    </actions>
-                </event-block>
+                </event-group>
+                <event-group description="" sid="941408405249223" title="Rice">
+                    <sub-events>
+                        <event-block sid="940826948663111">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="928462623618625" type="Touch">
+                                    <param id="0" name="Object">Rice</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="113694476460065" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
+                                    <param id="1" name="Value">random(ASSEMBLY_MINIMUMRICETOMAKE, ASSEMBLY_MAXIMUMRICETOMAKE)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="145933001589471">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="156386794730187" type="System">
+                                            <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-10" name="For" sid="130846899348830" type="System">
+                                            <param id="0" name="Name">&quot;MakeRice&quot;</param>
+                                            <param id="1" name="Start index">0</param>
+                                            <param id="2" name="End index">Assembly_GenerateRice</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="729266756205930" type="System">
+                                            <param id="0" name="Object to create">Piece</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="X">Touch.X+random(-ASSEMBLY_GENERATEDRICERANGEVARIATION, ASSEMBLY_GENERATEDRICERANGEVARIATION)</param>
+                                            <param id="3" name="Y">Touch.Y+random(-ASSEMBLY_GENERATEDRICERANGEVARIATION, ASSEMBLY_GENERATEDRICERANGEVARIATION)</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="725322521107554" type="Piece">
+                                            <param id="0" name="Instance variable">Ingredient</param>
+                                            <param id="1" name="Value">&quot;Rice&quot;</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="591856220757377" type="Piece">
+                                            <param id="0" name="Animation">&quot;Rice&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="651778248837897" type="Piece">
+                                            <param id="0" name="Instance variable">active</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="269146276109191" type="Piece">
+                                            <param id="0" name="Instance variable">xOffset</param>
+                                            <param id="1" name="Value">Touch.X - Self.X</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="438978534810530" type="Piece">
+                                            <param id="0" name="Instance variable">yOffset</param>
+                                            <param id="1" name="Value">Touch.Y - Self.Y</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="525666703329875" type="Piece">
+                                            <param id="0" name="Angle">random(0.0, 360.0)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="162635120814791" type="System">
+                                            <param id="0" name="Variable">ASSEMBLY_GenerateRice</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="7" name="Play (by name)" sid="892453774764826" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">choose(&quot;scoop_rice1&quot;, &quot;scoop_rice&quot;)</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">0</param>
+                                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="989731265749115">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="261859294765729" type="Touch" />
+                                <condition id="-7" name="Compare instance variable" sid="697144883993230" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Rice&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="870573437268540" type="Piece">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-14" name="Toggle boolean" sid="822481407786736" type="Piece">
+                                    <param id="0" name="Instance variable">active</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="438830539994752">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="974143179164648" type="Piece">
+                                    <param id="0" name="Instance variable">active</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="233144652887428" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Rice&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="498041913264342" type="Piece">
+                                    <param id="0" name="X">Touch.X + Self.xOffset</param>
+                                    <param id="1" name="Y">Touch.Y + Self.yOffset</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="182925974101905" title="Nori">
+                    <sub-events>
+                        <event-block sid="321448017097806">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="835264661946451" type="Touch" />
+                                <condition id="-14" name="Compare variable" sid="968354425896987" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="605458947917679" type="Piece">
+                                    <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="279482751540327" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Nori&quot;</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="938207044304794" type="Piece">
+                                    <param id="0" name="Object">SushiMat</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="552993648593624" type="Piece">
+                                    <param id="0" name="Object">SushiMat</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="640935762730798" type="Piece">
+                                    <param id="0" name="Layer">0</param>
+                                </action>
+                                <action id="-24" name="Move to top" sid="469579623720086" type="Piece" />
+                                <action id="-9" name="Set value" sid="548106309839914" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="687024986740317" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_Nori_UID</param>
+                                    <param id="1" name="Value">Piece.UID</param>
+                                </action>
+                                <action id="0" name="Play" sid="691876857082338" type="Audio">
+                                    <param id="0" name="Audio file">nori_crinkle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="456735117636923">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="789448316735508" type="Touch" />
+                                <condition id="-14" name="Pick by unique ID" sid="413394324931649" type="Piece">
+                                    <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="639467522304411" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Nori&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="583606071651598" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-16" name="Is on layer" sid="873778578752547" type="Piece">
+                                    <param id="0" name="Layer">1</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="367626797128799" type="Piece">
+                                    <param id="0" name="Object">SushiMat</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="891994213927934" type="Piece" />
+                                <action id="-9" name="Set value" sid="171459751087057" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="524118936797417" type="Audio">
+                                    <param id="0" name="Audio file">chomp_chomp</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="281360587889119">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="829958472018021" type="System">
+                                    <param id="0" name="Variable">MAIN_SelectedIngredient</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">-1</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="922772299405065" type="Piece">
+                                    <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="845885014773289" type="Piece">
+                                    <param id="0" name="Instance variable">Ingredient</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Nori&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="701940223048283" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="649285589580448" type="Piece" />
+                                <action id="-9" name="Set value" sid="425789041016126" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="192416480824649" type="Audio">
+                                    <param id="0" name="Audio file">chomp_chomp</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="629965671885115" title="Rolling">
+                    <sub-events>
+                        <event-block sid="319759975191886">
+                            <conditions>
+                                <condition id="10" name="On Nth touch start" sid="221493686298488" type="Touch">
+                                    <param id="0" name="Touch number">0</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="577277810507031" type="Touch">
+                                    <param id="0" name="Object">RamySprite07</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="118595431431651" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="647014688568236">
+                            <conditions>
+                                <condition id="10" name="On Nth touch start" sid="748393154514813" type="Touch">
+                                    <param id="0" name="Touch number">1</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="686619871160935" type="Touch">
+                                    <param id="0" name="Object">RamySprite07</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="333924721967535" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="124467301883500">
+                            <conditions>
+                                <condition id="13" name="On hold" sid="376698277563408" type="Touch" />
+                                <condition id="-14" name="Compare variable" sid="122594101688143" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="321571404791838" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="4" inverted="1" name="Is touching object" sid="636907598842609" type="Touch">
+                                    <param id="0" name="Object">RamySprite07</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="430910810066368" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="370047065998790">
+                            <conditions>
+                                <condition id="13" name="On hold" sid="463905171787402" type="Touch" />
+                                <condition id="-14" name="Compare variable" sid="824717032348727" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="461368258049771" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="4" inverted="1" name="Is touching object" sid="176950086304767" type="Touch">
+                                    <param id="0" name="Object">RamySprite07</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="640010482468744" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="555446957609567">
+                            <conditions>
+                                <condition id="13" name="On hold" sid="803760884624517" type="Touch" />
+                                <condition id="-14" name="Compare variable" sid="724701624356494" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="433870588012133" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="709827877510747" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="702602519510464" type="Touch">
+                                    <param id="0" name="Object">RamySprite07</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="277706362708369" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_BambooUID</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="414320863135948" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="665111982816325" type="System">
+                                    <param id="0" name="Object to create">SushiMat</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">455</param>
+                                    <param id="3" name="Y">400</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="406952514725696" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_BambooUID</param>
+                                    <param id="1" name="Value">SushiMat.UID</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="898412920780795" type="SushiMat">
+                                    <param id="0" name="Height">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="102125768446986">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="425568312773282" type="Touch" />
+                                <condition id="-14" name="Compare variable" sid="775150961970531" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="405537284328445" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="632730936006253" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="301288299877909" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="729793595084578">
+                            <conditions>
+                                <condition id="12" name="Has Nth touch" sid="963512254016397" type="Touch">
+                                    <param id="0" name="Touch number">0</param>
+                                </condition>
+                                <condition id="12" name="Has Nth touch" sid="923694700485843" type="Touch">
+                                    <param id="0" name="Touch number">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="893333777951361" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="228207014207038" type="SushiMat">
+                                    <param id="0" name="Unique ID">ASSEMBLY_BambooUID</param>
+                                </condition>
+                                <condition id="7" name="Compare touch speed" sid="890390973373569" type="Touch">
+                                    <param id="0" name="Touch index">0</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Speed">ASSEMBLY_MINIMUMROLLVELOCITY</param>
+                                </condition>
+                                <condition id="7" name="Compare touch speed" sid="682374572615641" type="Touch">
+                                    <param id="0" name="Touch index">1</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Speed">ASSEMBLY_MINIMUMROLLVELOCITY</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="651913251674479" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollCount</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">ASSEMBLY_MAXIMUMROLLCOUNT</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="203385779820951" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollCount</param>
+                                    <param id="1" name="Value">250*0.01*dt</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="121097840062987" type="SushiMat">
+                                    <param id="0" name="Height">ASSEMBLY_RollCount*ASSEMBLY_ROLL_HEIGHT_MULTIPLIER</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="768953955651922" type="SushiMat">
+                                    <param id="0" name="Y">Self.Y-ASSEMBLY_RollCount*ASSEMBLY_ROLL_YOFFSET_MULTIPLIER</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="756740205265484">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="245990920086754" type="System">
+                                            <param id="0" name="First value">random(100)</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">ASSEMBLY_PROBABILITYPLAYINGROLLSOUND</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="122073526215360" type="Audio">
+                                            <param id="0" name="Audio file">rolling_sushi1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="754468932105497">
+                            <conditions>
+                                <condition id="12" name="Has Nth touch" sid="641807314731036" type="Touch">
+                                    <param id="0" name="Touch number">0</param>
+                                </condition>
+                                <condition id="12" name="Has Nth touch" sid="294268632346325" type="Touch">
+                                    <param id="0" name="Touch number">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="701189942885702" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="771801002205890" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollCount</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">ASSEMBLY_MAXIMUMROLLCOUNT</param>
+                                </condition>
+                                <condition id="-16" name="Is on layer" sid="762588270871481" type="Piece">
+                                    <param id="0" name="Layer">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="166206744908565" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="597121056039028" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="748350963196562" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="623246643162298" type="System">
+                                    <param id="0" name="Variable">ASSEMBLY_BambooUID</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="511927150674627" type="System">
+                                    <param id="0" name="Object to create">RamySprite08</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">796</param>
+                                    <param id="3" name="Y">300</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="772508528188673" type="Piece" />
+                                <action id="-3" name="Create object" sid="374609392816209" type="System">
+                                    <param id="0" name="Object to create">RamySprite06</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">450</param>
+                                    <param id="3" name="Y">280</param>
+                                </action>
+                                <action id="0" name="Play" sid="669917612597845" type="Audio">
+                                    <param id="0" name="Audio file">cutting_sushi1</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="407587162143777">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="460151362923036" type="Piece">
+                                            <param id="0" name="Unique ID">ASSEMBLY_Nori_UID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="679365957449873" type="Piece" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="111495239790068" title="GoToPlating">
+                    <sub-events>
+                        <event-block sid="978174213049134">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="462294391482015" type="Touch">
+                                    <param id="0" name="Object">RamySprite08</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="892784459311403" type="System">
+                                    <param id="0" name="Layout">Plating</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
-        </event-group>
-        <event-group description="" sid="182925974101905" title="Nori">
-            <sub-events>
-                <event-block sid="321448017097806">
-                    <conditions>
-                        <condition id="1" name="On any touch end" sid="835264661946451" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="968354425896987" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="605458947917679" type="Piece">
-                            <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="279482751540327" type="Piece">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;Nori&quot;</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="938207044304794" type="Piece">
-                            <param id="0" name="Object">SushiMat</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set position to another object" sid="552993648593624" type="Piece">
-                            <param id="0" name="Object">SushiMat</param>
-                            <param id="1" name="Image point (optional)">0</param>
-                        </action>
-                        <action id="-26" name="Move to layer" sid="640935762730798" type="Piece">
-                            <param id="0" name="Layer">0</param>
-                        </action>
-                        <action id="-24" name="Move to top" sid="469579623720086" type="Piece" />
-                        <action id="-9" name="Set value" sid="548106309839914" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="456735117636923">
-                    <conditions>
-                        <condition id="1" name="On any touch end" sid="789448316735508" type="Touch" />
-                        <condition id="-14" name="Pick by unique ID" sid="413394324931649" type="Piece">
-                            <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="639467522304411" type="Piece">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;Nori&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="583606071651598" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-16" name="Is on layer" sid="873778578752547" type="Piece">
-                            <param id="0" name="Layer">1</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="367626797128799" type="Piece">
-                            <param id="0" name="Object">SushiMat</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="891994213927934" type="Piece" />
-                        <action id="-9" name="Set value" sid="171459751087057" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="281360587889119">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="829958472018021" type="System">
-                            <param id="0" name="Variable">MAIN_SelectedIngredient</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">-1</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="922772299405065" type="Piece">
-                            <param id="0" name="Unique ID">MAIN_SelectedIngredient</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="845885014773289" type="Piece">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;Nori&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="701940223048283" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_NoriCount</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="649285589580448" type="Piece" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="199491863259563" title="SetIngredients">
-            <sub-events>
-                <event-block sid="720880421502791">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="574458689166343" type="System" />
-                        <condition id="-14" name="Pick by unique ID" sid="735825190758317" type="Container">
-                            <param id="0" name="Unique ID">1</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="124857024192647" type="Array">
-                            <param id="0" name="X">0</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="352433463905669" type="Container">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Value">Array.At(0)</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="397743114056487" type="Container">
-                            <param id="0" name="Animation">Array.At(0)</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="741785357975246">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="871009062377583" type="System" />
-                        <condition id="-14" name="Pick by unique ID" sid="892942513471897" type="Container">
-                            <param id="0" name="Unique ID">2</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="592480601038412" type="Array">
-                            <param id="0" name="X">0</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="623633309810685" type="Container">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Value">Array.At(1)</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="879377040236377" type="Container">
-                            <param id="0" name="Animation">Array.At(1)</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="205706374325153">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="997524462028534" type="System" />
-                        <condition id="-14" name="Pick by unique ID" sid="472497052469307" type="Container">
-                            <param id="0" name="Unique ID">3</param>
-                        </condition>
-                        <condition id="0" name="Compare at X" sid="311139370625928" type="Array">
-                            <param id="0" name="X">0</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="154063218579442" type="Container">
-                            <param id="0" name="Instance variable">Ingredient</param>
-                            <param id="1" name="Value">Array.At(2)</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="248196567029863" type="Container">
-                            <param id="0" name="Animation">Array.At(2)</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="714997552323718" title="GoToNextLayout">
-            <sub-events>
-                <event-block sid="817238453857033">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="377665011417495" type="Touch">
-                            <param id="0" name="Object">RamySprite08</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="809476487721776" type="System">
-                            <param id="0" name="Layout">Plating</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="629965671885115" title="Rolling">
-            <sub-events>
-                <event-block sid="319759975191886">
-                    <conditions>
-                        <condition id="10" name="On Nth touch start" sid="221493686298488" type="Touch">
-                            <param id="0" name="Touch number">0</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="577277810507031" type="Touch">
-                            <param id="0" name="Object">RamySprite07</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="118595431431651" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="647014688568236">
-                    <conditions>
-                        <condition id="10" name="On Nth touch start" sid="748393154514813" type="Touch">
-                            <param id="0" name="Touch number">1</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="686619871160935" type="Touch">
-                            <param id="0" name="Object">RamySprite07</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="333924721967535" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="124467301883500">
-                    <conditions>
-                        <condition id="13" name="On hold" sid="376698277563408" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="122594101688143" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="321571404791838" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="4" inverted="1" name="Is touching object" sid="636907598842609" type="Touch">
-                            <param id="0" name="Object">RamySprite07</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="430910810066368" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="370047065998790">
-                    <conditions>
-                        <condition id="13" name="On hold" sid="463905171787402" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="824717032348727" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="461368258049771" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="4" inverted="1" name="Is touching object" sid="176950086304767" type="Touch">
-                            <param id="0" name="Object">RamySprite07</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="640010482468744" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="555446957609567">
-                    <conditions>
-                        <condition id="13" name="On hold" sid="803760884624517" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="724701624356494" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="433870588012133" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="709827877510747" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="4" name="Is touching object" sid="702602519510464" type="Touch">
-                            <param id="0" name="Object">RamySprite07</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="414320863135948" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="665111982816325" type="System">
-                            <param id="0" name="Object to create">SushiMat</param>
-                            <param id="1" name="Layer">2</param>
-                            <param id="2" name="X">400</param>
-                            <param id="3" name="Y">400</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="406952514725696" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_BambooUID</param>
-                            <param id="1" name="Value">SushiMat.UID</param>
-                        </action>
-                        <action id="-6" name="Set height" sid="898412920780795" type="SushiMat">
-                            <param id="0" name="Height">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="102125768446986">
-                    <conditions>
-                        <condition id="1" name="On any touch end" sid="425568312773282" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="775150961970531" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="405537284328445" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollLeftTouched</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="632730936006253" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollRightTouched</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="301288299877909" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="729793595084578">
-                    <conditions>
-                        <condition id="12" name="Has Nth touch" sid="963512254016397" type="Touch">
-                            <param id="0" name="Touch number">0</param>
-                        </condition>
-                        <condition id="12" name="Has Nth touch" sid="923694700485843" type="Touch">
-                            <param id="0" name="Touch number">1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="893333777951361" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_LockRolling</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="228207014207038" type="SushiMat">
-                            <param id="0" name="Unique ID">ASSEMBLY_BambooUID</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="203385779820951" type="System">
-                            <param id="0" name="Variable">ASSEMBLY_RollCount</param>
-                            <param id="1" name="Value">250*0.01*dt</param>
-                        </action>
-                        <action id="-6" name="Set height" sid="121097840062987" type="SushiMat">
-                            <param id="0" name="Height">ASSEMBLY_RollCount</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
+        </event-block>
     </events>
 </c2eventsheet>
