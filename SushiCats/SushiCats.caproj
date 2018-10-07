@@ -159,11 +159,125 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Eleanor06" sid="864529989229548">
+            <object-type name="PickIngredient" sid="864529989229548">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="807075372269057" type="number" />
+                </instance-variables>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156528901586458" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="156528901586458" speed="5">
+                        <frame duration="1" hotspotX="0.48855" hotspotY="0.475059" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_avacado.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="183459000640126" speed="5">
+                        <frame duration="1" hotspotX="0.512894" hotspotY="0.516509" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_carrot.png">
+                            <collision-poly>
+                                <point x="0.0229226" y="0.113208" />
+                                <point x="0.512894" y="0.285377" />
+                                <point x="0.647564" y="0.40566" />
+                                <point x="0.719198" y="0.516509" />
+                                <point x="0.888252" y="0.825472" />
+                                <point x="0.512894" y="0.764151" />
+                                <point x="0.352436" y="0.648585" />
+                                <point x="0.243553" y="0.516509" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="794978864633607" speed="5">
+                        <frame duration="1" hotspotX="0.561321" hotspotY="0.415954" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_cucumber.png">
+                            <collision-poly>
+                                <point x="0.34434" y="0.153846" />
+                                <point x="0.561321" y="0.22792" />
+                                <point x="0.639151" y="0.321937" />
+                                <point x="0.669811" y="0.415954" />
+                                <point x="0.950472" y="0.88604" />
+                                <point x="0.330189" y="0.695157" />
+                                <point x="0.00471698" y="0.415954" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="453504547985468" speed="5">
+                        <frame duration="1" hotspotX="0.573427" hotspotY="0.376404" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_daikon.png">
+                            <collision-poly>
+                                <point x="0.391608" y="0.157303" />
+                                <point x="0.573427" y="0.261236" />
+                                <point x="0.613054" y="0.328652" />
+                                <point x="0.622378" y="0.376404" />
+                                <point x="0.897436" y="0.766854" />
+                                <point x="0.573427" y="0.794944" />
+                                <point x="0.344988" y="0.651685" />
+                                <point x="0.011655" y="0.376404" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="413603451330179" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.481793" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_egg.png">
+                            <collision-poly>
+                                <point x="0.165714" y="0.154062" />
+                                <point x="0.5" y="0.106443" />
+                                <point x="0.871429" y="0.117647" />
+                                <point x="0.917143" y="0.481793" />
+                                <point x="0.922857" y="0.896359" />
+                                <point x="0.5" y="0.935574" />
+                                <point x="0.154286" y="0.820728" />
+                                <point x="0.0114286" y="0.481793" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="249298134349789" speed="5">
+                        <frame duration="1" hotspotX="0.523929" hotspotY="0.508434" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_grilledeel.png">
+                            <collision-poly>
+                                <point x="0.307305" y="0.301205" />
+                                <point x="0.523929" y="0.250602" />
+                                <point x="0.982368" y="0.0698795" />
+                                <point x="0.831234" y="0.508434" />
+                                <point x="0.738035" y="0.713253" />
+                                <point x="0.523929" y="0.949398" />
+                                <point x="0.093199" y="0.920482" />
+                                <point x="0.153652" y="0.508434" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="660755656640336" speed="5">
+                        <frame duration="1" hotspotX="0.484293" hotspotY="0.471631" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_salmon.png">
+                            <collision-poly>
+                                <point x="0.21466" y="0.106383" />
+                                <point x="0.484293" y="0.0141844" />
+                                <point x="0.722513" y="0.148936" />
+                                <point x="0.929319" y="0.471631" />
+                                <point x="0.803665" y="0.904255" />
+                                <point x="0.484293" y="0.829787" />
+                                <point x="0.306283" y="0.712766" />
+                                <point x="0.0078534" y="0.471631" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="432833683182776" speed="5">
+                        <frame duration="1" hotspotX="0.505102" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_tuna.png">
+                            <collision-poly>
+                                <point x="0.160714" y="0.0246479" />
+                                <point x="0.505102" y="0.0140845" />
+                                <point x="0.811224" y="0.0774648" />
+                                <point x="0.989796" y="0.5" />
+                                <point x="0.841837" y="0.964789" />
+                                <point x="0.505102" y="0.971831" />
+                                <point x="0.244898" y="0.859155" />
+                                <point x="0.0127551" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="128072148968377" speed="5">
+                        <frame duration="1" hotspotX="0.56" hotspotY="0.519553" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_shrimp.png">
+                            <collision-poly>
+                                <point x="0.191429" y="0.159218" />
+                                <point x="0.56" y="0.00837989" />
+                                <point x="0.917143" y="0.170391" />
+                                <point x="0.985714" y="0.519553" />
+                                <point x="0.865714" y="0.818436" />
+                                <point x="0.56" y="0.977654" />
+                                <point x="0.628571" y="0.452514" />
+                                <point x="0.00857143" y="0.519553" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -191,10 +305,16 @@
             </object-type>
             <object-type name="zone01" sid="845383208198235">
                 <plugin id="NinePatch" />
+                <instance-variables>
+                    <instance-variable name="ZoneName" sid="880661552397504" type="string" />
+                </instance-variables>
                 <texture />
             </object-type>
-            <object-type name="Tuna" sid="220577985943722">
+            <object-type name="CuttingBoardMArker" sid="220577985943722">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ZoneName" sid="808132020449069" type="string" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="738109726720252" speed="5">
                         <frame duration="1" hotspotX="0.505102" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_tuna.png">
@@ -349,6 +469,139 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="MoveIngredient" sid="918720875539352">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="TouchID" sid="589959251841406" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="573862093752200" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_salmon.png">
+                            <collision-poly>
+                                <point x="0.294" y="0.294" />
+                                <point x="0.5" y="0.242" />
+                                <point x="0.682" y="0.318" />
+                                <point x="0.84" y="0.5" />
+                                <point x="0.744" y="0.744" />
+                                <point x="0.5" y="0.702" />
+                                <point x="0.364" y="0.636" />
+                                <point x="0.136" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="756243153388516" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_shrimp.png">
+                            <collision-poly>
+                                <point x="0.242" y="0.242" />
+                                <point x="0.5" y="0.134" />
+                                <point x="0.75" y="0.25" />
+                                <point x="0.798" y="0.5" />
+                                <point x="0.714" y="0.714" />
+                                <point x="0.5" y="0.828" />
+                                <point x="0.548" y="0.452" />
+                                <point x="0.114" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="120037202713823" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_egg.png">
+                            <collision-poly>
+                                <point x="0.266" y="0.266" />
+                                <point x="0.5" y="0.232" />
+                                <point x="0.76" y="0.24" />
+                                <point x="0.792" y="0.5" />
+                                <point x="0.796" y="0.796" />
+                                <point x="0.5" y="0.824" />
+                                <point x="0.258" y="0.742" />
+                                <point x="0.158" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="202550174534441" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_grilledeel.png">
+                            <collision-poly>
+                                <point x="0.328" y="0.328" />
+                                <point x="0.5" y="0.286" />
+                                <point x="0.864" y="0.136" />
+                                <point x="0.744" y="0.5" />
+                                <point x="0.67" y="0.67" />
+                                <point x="0.5" y="0.866" />
+                                <point x="0.158" y="0.842" />
+                                <point x="0.206" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="771661850286850" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_daikon.png">
+                            <collision-poly>
+                                <point x="0.344" y="0.344" />
+                                <point x="0.5" y="0.418" />
+                                <point x="0.534" y="0.466" />
+                                <point x="0.542" y="0.5" />
+                                <point x="0.778" y="0.778" />
+                                <point x="0.5" y="0.798" />
+                                <point x="0.304" y="0.696" />
+                                <point x="0.018" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="507509270018300" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_cucumber.png">
+                            <collision-poly>
+                                <point x="0.316" y="0.316" />
+                                <point x="0.5" y="0.368" />
+                                <point x="0.566" y="0.434" />
+                                <point x="0.592" y="0.5" />
+                                <point x="0.83" y="0.83" />
+                                <point x="0.304" y="0.696" />
+                                <point x="0.028" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="562021374227784" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_carrot.png">
+                            <collision-poly>
+                                <point x="0.158" y="0.158" />
+                                <point x="0.5" y="0.304" />
+                                <point x="0.594" y="0.406" />
+                                <point x="0.644" y="0.5" />
+                                <point x="0.762" y="0.762" />
+                                <point x="0.5" y="0.71" />
+                                <point x="0.388" y="0.612" />
+                                <point x="0.312" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="857067036537062" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_avacado.png">
+                            <collision-poly>
+                                <point x="0.316" y="0.316" />
+                                <point x="0.5" y="0.104" />
+                                <point x="0.692" y="0.308" />
+                                <point x="0.748" y="0.5" />
+                                <point x="0.756" y="0.756" />
+                                <point x="0.5" y="0.938" />
+                                <point x="0.254" y="0.746" />
+                                <point x="0.264" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="879577294741405" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\elean\Downloads\drive-download-20181007T002432Z-001\picto_tuna.png">
+                            <collision-poly>
+                                <point x="0.23" y="0.23" />
+                                <point x="0.5" y="0.224" />
+                                <point x="0.74" y="0.26" />
+                                <point x="0.88" y="0.5" />
+                                <point x="0.764" y="0.764" />
+                                <point x="0.5" y="0.768" />
+                                <point x="0.296" y="0.704" />
+                                <point x="0.114" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
             <object-type name="02Sprite" sid="638144134003891">
                 <plugin id="Sprite" />
                 <animation-folder>
@@ -368,8 +621,7 @@
             <object-type name="Piece" sid="190531322475751">
                 <plugin id="Sprite" />
                 <instance-variables>
-                    <instance-variable name="active" sid="319351780859218" type="boolean" />
-                    <instance-variable name="id" sid="492213128300445" type="number" />
+                    <instance-variable name="Ingredient" sid="841570929427505" type="string" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804964645065668" speed="5">
@@ -782,8 +1034,46 @@
         </global-instance>
         <global-instance type="Browser" uid="52" />
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="chop_vegetable1.m4a" />
+        <file name="chop_vegetable1.ogg" />
+        <file name="chop_vegetable2.m4a" />
+        <file name="chop_vegetable2.ogg" />
+        <file name="chop_vegetable_knife.m4a" />
+        <file name="chop_vegetable_knife.ogg" />
+        <file name="cutting_sushi1.m4a" />
+        <file name="cutting_sushi1.ogg" />
+        <file name="placing_ingredients.m4a" />
+        <file name="placing_ingredients.ogg" />
+        <file name="placing_ingredients1.m4a" />
+        <file name="placing_ingredients1.ogg" />
+        <file name="placing_ingredients2.m4a" />
+        <file name="placing_ingredients2.ogg" />
+        <file name="placing_ingredients3.m4a" />
+        <file name="placing_ingredients3.ogg" />
+        <file name="placing_ingredients4.m4a" />
+        <file name="placing_ingredients4.ogg" />
+        <file name="placing_ingredients5.m4a" />
+        <file name="placing_ingredients5.ogg" />
+        <file name="placing_ingredients_soft1.m4a" />
+        <file name="placing_ingredients_soft1.ogg" />
+        <file name="placing_ingredients_soft2.m4a" />
+        <file name="placing_ingredients_soft2.ogg" />
+        <file name="plating_plop1.m4a" />
+        <file name="rice_nori_plop.m4a" />
+        <file name="rice_nori_plop2.m4a" />
+        <file name="slice_meat1.m4a" />
+        <file name="plating_plop1.ogg" />
+        <file name="rice_nori_plop.ogg" />
+        <file name="rice_nori_plop2.ogg" />
+        <file name="slice_meat1.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="MainMusic.m4a" />
+        <file name="MainMusic.ogg" />
+        <file name="MenuMusic.m4a" />
+        <file name="MenuMusic.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
