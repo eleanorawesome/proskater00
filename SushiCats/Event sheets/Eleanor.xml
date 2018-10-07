@@ -132,9 +132,9 @@
                                         <event-block sid="802660856904967">
                                             <conditions>
                                                 <condition id="1" name="Is overlapping another object" sid="959268400193993" type="MoveIngredient">
-                                                    <param id="0" name="Object">zone01</param>
+                                                    <param id="0" name="Object">CuttingBoardMArker</param>
                                                 </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="788428152129565" type="zone01">
+                                                <condition id="-7" name="Compare instance variable" sid="788428152129565" type="CuttingBoardMArker">
                                                     <param id="0" name="Instance variable">ZoneName</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">&quot;NomNom&quot;</param>
@@ -158,7 +158,7 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-4" name="Set position to another object" sid="276834682477692" type="MoveIngredient">
-                                                    <param id="0" name="Object">zone01</param>
+                                                    <param id="0" name="Object">CuttingBoardMArker</param>
                                                     <param id="1" name="Image point (optional)">0</param>
                                                 </action>
                                             </actions>
@@ -281,11 +281,12 @@
                             <param id="0" name="Animation">PickIngredient.AnimationName</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="0" name="Play" sid="412301209928122" type="Audio">
-                            <param id="0" name="Audio file">placing_ingredients</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        <action id="7" name="Play (by name)" sid="412301209928122" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;&quot;</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
