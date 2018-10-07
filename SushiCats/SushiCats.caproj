@@ -79,31 +79,58 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Avocado" pingpong="0" repeatcount="1" repeatto="0" sid="862999971021369" speed="5">
-                        <frame duration="1" hotspotX="0.539419" hotspotY="0.401575" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_avacado.png" />
+                        <frame duration="1" hotspotX="0.539419" hotspotY="0.401575" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_avacado.png">
+                            <image-point name="Imagepoint 1" x="0.636929" y="-0.096063" />
+                            <image-point name="Imagepoint 2" x="0.1639" y="1.13386" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Carrot" pingpong="0" repeatcount="1" repeatto="0" sid="719276887789160" speed="5">
-                        <frame duration="1" hotspotX="0.504043" hotspotY="0.48" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_carrots.png" />
+                        <frame duration="1" hotspotX="0.504043" hotspotY="0.48" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_carrots.png">
+                            <image-point name="Imagepoint 1" x="0.0431267" y="-1.024" />
+                            <image-point name="Imagepoint 2" x="0.819407" y="1.64" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Daikon" pingpong="0" repeatcount="1" repeatto="0" sid="311945243120922" speed="5">
-                        <frame duration="1" hotspotX="0.504043" hotspotY="0.536" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_daikon.png" />
+                        <frame duration="1" hotspotX="0.504043" hotspotY="0.536" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_daikon.png">
+                            <image-point name="Imagepoint 1" x="-0.0835579" y="-0.016" />
+                            <image-point name="Imagepoint 2" x="1.07278" y="1" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Eel" pingpong="0" repeatcount="1" repeatto="0" sid="458816918243758" speed="5">
-                        <frame duration="1" hotspotX="0.516517" hotspotY="0.511976" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_eel.png" />
+                        <frame duration="1" hotspotX="0.516517" hotspotY="0.511976" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_eel.png">
+                            <image-point name="Imagepoint 1" x="0.629129" y="-0.350299" />
+                            <image-point name="Imagepoint 2" x="0.361862" y="1.11677" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Cucumber" pingpong="0" repeatcount="1" repeatto="0" sid="450592356091975" speed="5">
-                        <frame duration="1" hotspotX="0.501348" hotspotY="0.456" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_cucumber.png" />
+                        <frame duration="1" hotspotX="0.501348" hotspotY="0.456" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_cucumber.png">
+                            <image-point name="Imagepoint 1" x="-0.169811" y="-0.496" />
+                            <image-point name="Imagepoint 2" x="0.84097" y="1.352" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Tuna" pingpong="0" repeatcount="1" repeatto="0" sid="328619143357898" speed="5">
-                        <frame duration="1" hotspotX="0.535893" hotspotY="0.629545" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_tuna.png" />
+                        <frame duration="1" hotspotX="0.535893" hotspotY="0.629545" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_tuna.png">
+                            <image-point name="Imagepoint 1" x="-0.0784641" y="0.440909" />
+                            <image-point name="Imagepoint 2" x="1.07179" y="0.495455" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Egg" pingpong="0" repeatcount="1" repeatto="0" sid="363608775960229" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502075" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_egg.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502075" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_egg.png">
+                            <image-point name="Imagepoint 1" x="1.14115" y="-0.0995851" />
+                            <image-point name="Imagepoint 2" x="-0.117225" y="1.04979" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Shrimp" pingpong="0" repeatcount="1" repeatto="0" sid="648322180837057" speed="5">
-                        <frame duration="1" hotspotX="0.367742" hotspotY="0.567742" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_shrimp.png" />
+                        <frame duration="1" hotspotX="0.367742" hotspotY="0.567742" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_shrimp.png">
+                            <image-point name="Imagepoint 1" x="0.422581" y="-0.0645161" />
+                            <image-point name="Imagepoint 2" x="0.409677" y="1.07742" />
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Salmon" pingpong="0" repeatcount="1" repeatto="0" sid="153649157276889" speed="5">
-                        <frame duration="1" hotspotX="0.513021" hotspotY="0.445513" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_salmon.png" />
+                        <frame duration="1" hotspotX="0.513021" hotspotY="0.445513" original-source="C:\Users\elean\Downloads\drive-download-20181007T040523Z-001\sliced_salmon.png">
+                            <image-point name="Imagepoint 1" x="-0.0494792" y="0.0769231" />
+                            <image-point name="Imagepoint 2" x="1.0599" y="0.955128" />
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
