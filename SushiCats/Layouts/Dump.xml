@@ -419,6 +419,7 @@
                     </properties>
                     <instance-variables>
                         <TouchID>-1</TouchID>
+                        <Bowled>false</Bowled>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -498,11 +499,11 @@
                         <x>386</x>
                         <y>334</y>
                         <z>0</z>
-                        <width>349</width>
-                        <height>424</height>
+                        <width>238</width>
+                        <height>219</height>
                         <depth>0</depth>
-                        <hotspotX>0.512893975</hotspotX>
-                        <hotspotY>0.516509414</hotspotY>
+                        <hotspotX>0.50420171</hotspotX>
+                        <hotspotY>0.484018266</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
