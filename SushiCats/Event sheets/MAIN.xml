@@ -7,5 +7,76 @@
         <include>Jhayzle</include>
         <include>Jennifer</include>
         <include>Eleanor</include>
+        <event-group description="" sid="882532419829115" title="Grabbable">
+            <sub-events>
+                <event-block sid="118172463177467">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="225149565477255" type="Touch">
+                            <param id="0" name="Object">Container</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="347914422496496" type="System">
+                            <param id="0" name="Object to create">Piece</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Touch.X</param>
+                            <param id="3" name="Y">Touch.Y</param>
+                        </action>
+                        <action id="-14" name="Toggle boolean" sid="230957706884974" type="Piece">
+                            <param id="0" name="Instance variable">active</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="911314784782130">
+                    <conditions>
+                        <condition id="1" name="On any touch end" sid="886057605531455" type="Touch" />
+                        <condition id="-8" name="Is boolean instance variable set" sid="386136213918747" type="Piece">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="530644038345339" type="Piece">
+                            <param id="0" name="Instance variable">active</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="703272607481779" type="Piece">
+                            <param id="0" name="X">Touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="689144888097586">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="744034993190893" type="Touch">
+                            <param id="0" name="Object">Piece</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="380901997414489" type="Piece">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="612588698179957" type="Piece">
+                            <param id="0" name="Instance variable">active</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="553255689659061" type="Piece">
+                            <param id="0" name="X">Touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="222559681733200">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="241264341289699" type="Piece">
+                            <param id="0" name="Instance variable">active</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="612330915989631" type="Piece">
+                            <param id="0" name="X">Touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

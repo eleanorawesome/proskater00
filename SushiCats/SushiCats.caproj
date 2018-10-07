@@ -237,7 +237,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Ramy">
-            <object-type name="01Sprite" sid="322390840567928">
+            <object-type name="Container" sid="322390840567928">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669574087138062" speed="5">
@@ -261,7 +261,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="04Sprite" sid="190531322475751">
+            <object-type name="Piece" sid="190531322475751">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="active" sid="319351780859218" type="boolean" />

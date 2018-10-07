@@ -54,7 +54,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="01Sprite" uid="8">
+                <instance type="Container" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -120,7 +120,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="04Sprite" uid="11">
+                <instance type="Piece" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
