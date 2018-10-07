@@ -1012,13 +1012,13 @@
         <event-sheet>Ramy.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Function" uid="43" />
-        <global-instance type="Touch" uid="44">
+        <global-instance type="Function" uid="44" />
+        <global-instance type="Touch" uid="45">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="45">
+        <global-instance type="Audio" uid="50">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
